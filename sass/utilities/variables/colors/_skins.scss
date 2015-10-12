@@ -1,0 +1,70 @@
+//--------------------------------------------------------------
+//   SKINS
+//
+// - Backgrounds
+// - Border colors
+// - SVG fills
+// - SVG strokes
+//
+//-------------------------------------------------------------
+
+$color-background-body: $color-white;
+$color-background-screen-reader: $color-gray;
+$color-background-hr: $color-light-gray;
+$color-background-button: $color-blue;
+$color-background-pre: $color-lighter-gray;
+$color-background-ins: lighten($color-yellow, 34%);;
+
+$color-text-screen-reader: $color-blue;
+$color-text-input: $color-dark-gray;
+$color-text-input-focus: $color-darkest-gray;
+$color-link: $color-blue;
+$color-link-visited: $color-blue;
+$color-link-hover: $color-blue;
+$color-text-main: $color-darkest-gray;
+
+$color-border-button: $color-light-gray;
+$color-border-button-hover: $color-light-gray;
+$color-border-button-focus: $color-light-gray;
+$color-border-input: $color-light-gray;
+$color-border-abbr: $color-dark-gray;
+
+// Backgrounds
+.bg-blue { background-color: $color-blue; }
+.bg-green { background-color: $color-green; }
+.bg-red  { background-color: $color-red; }
+.bg-orange { background-color: $color-orange; }
+.bg-yellow { background-color: $color-yellow; }
+.bg-black { background-color: $color-black; }
+.bg-white { background-color: $color-white; }
+.bg-gray { background-color: $color-gray; }
+
+// Border colors
+.border--blue { border-color: $color-blue; }
+.border--green { border-color: $color-green; }
+.border--red { border-color: $color-red; }
+.border--orange { border-color: $color-orange; }
+.border--yellow { border-color: $color-yellow; }
+.border--black { border-color: $color-black; }
+.border--white { border-color: $color-white; }
+.border--gray { border-color: $color-gray; }
+
+// SVG fills
+.fill-blue { fill: $color-blue; }
+.fill-green { fill: $color-green; }
+.fill-red { fill: $color-red; }
+.fill-orange { fill: $color-orange; }
+.fill-yellow { fill: $color-yellow; }
+.fill-black { fill: $color-black; }
+.fill-white { fill: $color-white; }
+.fill-gray { fill: $color-gray; }
+
+// SVG strokes
+.stroke-blue { stroke: $color-blue; }
+.stroke-green { stroke: $color-green; }
+.stroke-red { stroke: $color-red; }
+.stroke-orange { stroke: $color-orange; }
+.stroke-yellow { stroke: $color-yellow; }
+.stroke-black { stroke: $color-black; }
+.stroke-white { stroke: $color-white; }
+.stroke-gray { stroke: $color-gray; }
