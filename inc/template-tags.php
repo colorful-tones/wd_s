@@ -266,10 +266,20 @@ add_action( 'save_post',     '_s_category_transient_flusher' );
  * Return SVG markup.
  *
  * @param  string   $icon_name   Use the icon name, such as "facebook-square"
+ * @param  string(optional) $icon_fill The color of the desired icon fill, e.g. 'green'
+ * @param  string(optional) $icon_stroke The color of the desired svg stroke for icon, e.g. 'red'
  */
-function _s_get_svg( $icon_name ) {
+function _s_get_svg( $icon_name, $icon_fill = '', $icon_stroke = '' ) {
 
-	$svg = '<svg class="icon icon-' . esc_html( $icon_name ) . '">';
+	if( isset( $icon_fill ) ) {
+    	$svg_icon_fill = ' fill-' . $icon_fill;
+    }
+	
+	if( isset( $icon_stroke) ) {
+    	$svg_icon_stroke = ' stroke-' . $icon_stroke;
+    }
+
+	$svg = '<svg class="icon icon-' . esc_html( $icon_name ) . $svg_icon_fill . $svg_icon_stroke . '">';
 	$svg .= '	<use xlink:href="#icon-' . esc_html( $icon_name ) . '"></use>';
 	$svg .= '</svg>';
 
