@@ -30,7 +30,7 @@ Basic knowledge of the command line and the following dependencies are required 
 
 To get started, we'll download the files and then to do some finding and replacing:
 
-1) [Download](https://github.com/WebDevStudios/wd_s/archive/master.zip) and extract the zip into your project's `/themes` directory
+1) [Download](https://github.com/WebDevStudios/wd_s/archive/master.zip) and extract the zip into your project's `wp-content/themes` directory and rename `wd_s` to fit your needs
 
 2) Find & Replace
 
@@ -47,10 +47,10 @@ Once you've setup the theme, you can start the [install](https://github.com/WebD
 
 # Installation
 
-1) From the command line, navigate to the `/themes` directory of your project
+1) From the command line, change directories to your new theme directory
 
 ```bash
-cd /your-project/wordpress/wp-content/themes
+cd /your-project/wordpress/wp-content/themes/your-theme
 ```
 
 2) Install dependencies

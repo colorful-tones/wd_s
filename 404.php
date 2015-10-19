@@ -2,6 +2,8 @@
 /**
  * The template for displaying 404 pages (not found).
  *
+ * @link https://codex.wordpress.org/Creating_an_Error_404_Page
+ *
  * @package _s
  */
 
@@ -17,7 +19,7 @@ get_header(); ?>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', '_s' ); ?></p>
+					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', '_s' ); ?></p>
 
 					<?php get_search_form(); ?>
 
