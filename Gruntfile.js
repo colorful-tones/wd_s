@@ -281,6 +281,17 @@ module.exports = function(grunt) {
 				},
 			},
 		},
+		
+		kss: {
+			options: {
+				css: 'style.css'
+			},
+			dist: {
+				files: {
+					'/styleguide': ['sass/style.scss']
+				}
+			}
+		},
 
 		notify_hooks: {
 			options: {
@@ -295,6 +306,7 @@ module.exports = function(grunt) {
 	});
 
 	grunt.registerTask('styles', ['sass', 'autoprefixer', 'combine_mq', 'csscomb', 'cssmin']);
+	grunt.registerTask('styleguide', ['kss']);
 	grunt.registerTask('javascript', ['concat', 'uglify']);
 	grunt.registerTask('imageminnewer', ['newer:imagemin']);
 	grunt.registerTask('sprites', ['sprite']);
