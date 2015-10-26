@@ -22,7 +22,7 @@ $color-black: #000000;
 $color-white: #ffffff;
 $color-gray: mix($color-black, $color-white, 50%); // #808080
 
-// Here we use $color-gray to mix our variation palette:
+// Here we can use $color-gray to mix our variation palette (not required):
 // http://razorjam.github.io/sasscolourfunctioncalculator/
 $color-dark-gray: darken(saturate(adjust-hue($color-gray, 0.0000), 0.0000), 10.5882); // #666666
 $color-darker-gray: darken(saturate(adjust-hue($color-gray, 0.0000), 0.0000), 30.5882); // #333333
@@ -30,31 +30,3 @@ $color-darkest-gray: darken(saturate(adjust-hue($color-gray, 0.0000), 0.0000), 4
 $color-light-gray: lighten(saturate(adjust-hue($color-gray, 0.0000), 0.0000), 29.4118); // #cccccc
 $color-lighter-gray: lighten(saturate(adjust-hue($color-gray, 0.0000), 0.0000), 36.0784); // #dddddd
 $color-lightest-gray: lighten(saturate(adjust-hue($color-gray, 0.0000), 0.0000), 42.7451); // #eeeeee
-
-// Social media
-$color-rss: #ff9900;
-$color-twitter: #00aced;
-$color-facebook: #3b5998;
-$color-googleplus: #dd4b39;
-$color-pinterest: #cb2027;
-$color-linkedin: #007bb6;
-$color-youtube: #bb0000;
-$color-instagram: #517fa4;
-
-$social-colors: (
-	facebook:          $color-facebook,
-	facebook-square:   $color-facebook,
-	googleplus:        $color-googleplus,
-	googleplus-square: $color-googleplus,
-	instagram:         $color-instagram,
-	linkedin:          $color-linkedin,
-	linkedin-square:   $color-linkedin,
-	pinterest:         $color-pinterest,
-	pinterest-square:  $color-pinterest,
-	rss:               $color-rss,
-	rss-square:        $color-rss,
-	twitter:           $color-twitter,
-	twitter-square:    $color-twitter,
-	youtube:           $color-youtube,
-	youtube-square:    $color-youtube,
-);
