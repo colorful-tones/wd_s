@@ -1,25 +1,16 @@
 //--------------------------------------------------------------
-//   COLORS
+//   COLORS - Grayscale
 //
-// - Primary palette
-// - Secondary palette
-// - Gray scale
-// - Social media
+// - Black & White
+// - Grayscale
 //
 //-------------------------------------------------------------
 
-// Primary palette
-$color-blue: #0074D9;
-$color-green: #2ECC40;
-$color-red: #FF4136;
-
-// Secondary palette
-$color-orange: #FF851B;
-$color-yellow: #FFDC00;
-
-// Gray scale
+// Black & White
 $color-black: #000000;
 $color-white: #ffffff;
+
+// Grayscale
 $color-gray: mix($color-black, $color-white, 50%); // #808080
 
 // Here we can use $color-gray to mix our variation palette (not required):
