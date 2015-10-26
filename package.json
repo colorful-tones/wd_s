@@ -32,6 +32,7 @@
     "grunt-contrib-watch": "latest",
     "grunt-csscomb": "latest",
     "grunt-githooks": "latest",
+    "grunt-kss": "^2.0.0",
     "grunt-newer": "latest",
     "grunt-notify": "latest",
     "grunt-phpcs": "latest",
