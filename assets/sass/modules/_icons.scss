@@ -9,7 +9,7 @@
 	text-align: center;
 
 	// After 1024px, let's float and text align left
-	@include media($tablet-landscape) {
+	@include media($large-screen) {
 		float: left;
 		text-align: left;
 	}

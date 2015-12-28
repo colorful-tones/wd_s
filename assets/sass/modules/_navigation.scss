@@ -131,7 +131,7 @@ a {
 	ul {
 		display: none;
 
-		@include media($phone-landscape) {
+		@include media($medium-screen) {
 			display: block;
 		}
 	}
@@ -145,7 +145,7 @@ a {
 .menu-toggle {
 	display: block;
 
-	@include media($phone-landscape) {
+	@include media($medium-screen) {
 		display: none;
 	}
 }
