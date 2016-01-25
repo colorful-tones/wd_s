@@ -1,0 +1,42 @@
+//--------------------------------------------------------------
+// Buttons, all things buttons (.btn, .button, <button>)
+//--------------------------------------------------------------
+
+.btn,
+.button {
+	// With great power comes great responsibility
+	// Use @extend carefully
+	@extend %button;
+
+	&-wide {
+		display: block;
+		width: 100%;
+	}
+	
+	&-outline {
+		background-color: rgba($color-black, 0);
+		border: 2px solid $color-white;
+		
+		&:active,
+		&:hover,
+		&:visited {
+			background-color: rgba($color-black, 0.18)
+		}
+	}
+	
+	&-arrow {
+		
+		&:after {
+			@include triangle(8px 9px, $color-white, right);
+			
+			content: '';
+			display: inline-block;
+			margin-left: rem(12);
+		}
+	}
+  
+  	&.button-alt,
+	&.btn-alt {
+		background-color: $color-blue;
+	}
+}

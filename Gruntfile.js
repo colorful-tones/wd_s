@@ -17,6 +17,14 @@ module.exports = function(grunt) {
 				'pre-commit': 'default'
 			}
 		},
+		
+		livingstyleguide: {
+		  generate: {
+			options: {
+			  src: 'styleguide.lsg'
+			}
+		  }
+		},
 
 		/**
 		 * Convert a set of images into a spritesheet and corresponding CSS variables.
@@ -87,8 +95,7 @@ module.exports = function(grunt) {
 				sourceComments: true,
 				sourceMap: true,
 				includePaths: [
-					'assets/bower_components/bourbon/app/assets/stylesheets',
-					'assets/bower_components/neat/app/assets/stylesheets'
+					'node_modules/bourbon/app/assets/stylesheets',
 				]
 			},
 			dist: {
@@ -343,5 +350,6 @@ module.exports = function(grunt) {
 
 	// grunt-notify shows native notifications on errors.
 	grunt.loadNpmTasks('grunt-notify');
+	grunt.loadNpmTasks('grunt-livingstyleguide');
 	grunt.task.run('notify_hooks');
 };

@@ -1,0 +1,7 @@
+# styleguide.lsg
+source: assets/sass/style.scss
+title: My Cool Pattern Library
+
+javascript-before:
+  - https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js
+  - assets/js/project.js

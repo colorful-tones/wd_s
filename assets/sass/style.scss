@@ -18,9 +18,9 @@ Normalizing styles have been helped along thanks to the fine work of
 Bo-Yi Wu (https://github.com/appleboy/), Nicolas Gallagher (https://github.com/necolas), and Jonathan Neal (https://github.com/jonathantneal).
 */
 
-@import "bourbon";
+@import "../../node_modules/bourbon/app/assets/stylesheets/bourbon";
 @import "utilities/variables/index";
-@import "neat";
+@import "../../node_modules/bourbon-neat/app/assets/stylesheets/neat";
 @import "utilities/mixins/index";
 
 @import "base/index";

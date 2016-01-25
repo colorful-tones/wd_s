@@ -14,7 +14,8 @@ textarea {
 button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"],
+%button {
 	background-color: $color-dove-gray;
 	border: none;
 	border-radius: 0;

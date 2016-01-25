@@ -22,6 +22,7 @@
     "grunt-contrib-watch": "latest",
     "grunt-cssnano": "latest",
     "grunt-githooks": "latest",
+    "grunt-livingstyleguide": "^1.0.3",
     "grunt-newer": "latest",
     "grunt-notify": "latest",
     "grunt-phpcs": "latest",
@@ -33,7 +34,9 @@
     "grunt-svgmin": "latest",
     "grunt-svgstore": "latest",
     "grunt-wp-i18n": "latest",
-    "load-grunt-tasks": "latest"
+    "load-grunt-tasks": "latest",
+	"bourbon": "latest",
+	"bourbon-neat": "latest"
   },
   "license": "GPL-2.0+"
 }
