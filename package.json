@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "autoprefixer": "latest",
+    "bourbon": "latest",
+    "bourbon-neat": "latest",
     "css-mqpacker": "latest",
     "glob": "latest",
     "grunt": "latest",
