@@ -180,6 +180,27 @@ module.exports = function(grunt) {
 				}]
 			}
 		},
+		
+		md2html: {
+			multiple_files: {
+				options: {
+					// Task-specific options go here. 
+					layout: 'assets/patterns-src/layout.html',
+					basePath: '.',
+
+					markedOptions: {
+						gfm: true
+					}
+				},
+				files: [{
+					expand: true,
+					cwd: 'assets/patterns-src',
+					src: ['**/*.md'],
+					dest: 'assets/patterns-dist',
+					ext: '.html'
+				}]
+			}
+		},
 
 		/**
 		 * Run tasks whenever watched files change.
@@ -227,6 +248,15 @@ module.exports = function(grunt) {
 			images: {
 				files: ['assets/images/*'],
 				tasks: ['imageminnewer'],
+				options: {
+					spawn: false,
+					livereload: true,
+				},
+			},
+			
+			md2html: {
+				files: ['assets/patterns-src/*'],
+				tasks: ['patterns'],
 				options: {
 					spawn: false,
 					livereload: true,
@@ -333,13 +363,14 @@ module.exports = function(grunt) {
 	});
 
 	// Register Grunt tasks.
+	grunt.registerTask('patterns', ['md2html']);
 	grunt.registerTask('styles', ['sass', 'postcss', 'cssnano']);
 	grunt.registerTask('javascript', ['concat', 'uglify']);
 	grunt.registerTask('imageminnewer', ['newer:imagemin']);
 	grunt.registerTask('sprites', ['sprite']);
 	grunt.registerTask('icons', ['svgmin', 'svgstore']);
 	grunt.registerTask('i18n', ['makepot']);
-	grunt.registerTask('default', ['styles', 'javascript', 'sprites', 'imageminnewer', 'icons', 'i18n', 'sassdoc']);
+	grunt.registerTask('default', ['styles', 'javascript', 'sprites', 'imageminnewer', 'icons', 'i18n', 'sassdoc', 'patterns']);
 
 	// grunt-notify shows native notifications on errors.
 	grunt.loadNpmTasks('grunt-notify');
