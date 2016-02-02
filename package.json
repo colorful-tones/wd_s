@@ -20,6 +20,7 @@
     "grunt-contrib-jshint": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-watch": "latest",
+    "grunt-contrib-copy": "latest",
     "grunt-cssnano": "latest",
     "grunt-githooks": "latest",
     "grunt-newer": "latest",
