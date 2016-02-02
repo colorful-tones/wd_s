@@ -288,7 +288,8 @@ module.exports = function(grunt) {
 		 * @link https://github.com/gruntjs/grunt-contrib-clean
 		 */
 		clean: {
-			js: ['assets/js/project*', 'assets/js/**/*.min.js']
+			js: ['assets/js/project*', 'assets/js/**/*.min.js'],
+			patterns: ['pattern-library/patterns-dest/*.{html,md}']
 		},
 
 		/**
