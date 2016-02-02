@@ -378,7 +378,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('sprites', ['sprite']);
 	grunt.registerTask('icons', ['svgmin', 'svgstore']);
 	grunt.registerTask('i18n', ['makepot']);
-	grunt.registerTask('default', ['styles', 'javascript', 'sprites', 'imageminnewer', 'icons', 'i18n', 'sassdoc']);
+	grunt.registerTask('default', ['styles', 'javascript', 'sprites', 'imageminnewer', 'icons', 'i18n', 'sassdoc', 'patterns']);
 
 	// grunt-notify shows native notifications on errors.
 	grunt.loadNpmTasks('grunt-notify');
