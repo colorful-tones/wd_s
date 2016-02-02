@@ -236,6 +236,7 @@ module.exports = function(grunt) {
 
 			css: {
 				files: ['assets/sass/**/*.scss', 'pattern-library/patterns-dest/assets/sass/**/*.scss'],
+				tasks: ['styles', 'copy:patternlibrary'],
 				options: {
 					spawn: false,
 					livereload: true,
