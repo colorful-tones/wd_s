@@ -17,6 +17,33 @@ module.exports = function(grunt) {
 				'pre-commit': 'default'
 			}
 		},
+		
+		// Build HTML with Assemble.io
+		assemble: {
+			options: {
+				assets: 'pattern-library/patterns-dest/assets',
+				data: ['pattern-library/patterns-src/data/*.{json,yml}'],
+				helpers: 'pattern-library/patterns-src/helpers/helper-*.js',
+				layout: 'default.hbs',
+				layoutdir: 'pattern-library/patterns-src/templates/layouts',
+				partials: ['pattern-library/patterns-src/templates/partials/*.hbs', './*.md'],
+				patternStructure: [
+					{ "name": "Base", "path": "base" },
+					{ "name": "Modules", "path": "modules" },
+					{ "name": "Views", "path": "views" },
+					{ "name": "Pattern Tests", "path": "pattern-tests"}
+				],
+				postprocess: require('pretty'),
+			},
+			posts: {
+				files: [{
+					cwd: './pattern-library/patterns-src/content/',
+					dest: './pattern-library/patterns-dest/',
+					expand: true,
+					src: '**/*.{md,hbs}'
+				}]
+			}
+		},
 
 		/**
 		 * Convert a set of images into a spritesheet and corresponding CSS variables.
