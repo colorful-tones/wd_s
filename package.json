@@ -34,7 +34,11 @@
     "grunt-svgmin": "latest",
     "grunt-svgstore": "latest",
     "grunt-wp-i18n": "latest",
-    "load-grunt-tasks": "latest"
+    "load-grunt-tasks": "latest",
+    "pretty": "latest"
   },
   "license": "GPL-2.0+"
+  "devDependencies": {
+    "grunt-assemble": "^0.4.0",
+  }
 }
