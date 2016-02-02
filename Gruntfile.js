@@ -371,7 +371,8 @@ module.exports = function(grunt) {
 	});
 
 	// Register Grunt tasks.
-	grunt.registerTask('styles', ['sass', 'postcss', 'cssnano']);
+	grunt.registerTask('patterns', ['newer:assemble']);
+	grunt.registerTask('styles', ['sass', 'sass_globbing', 'postcss', 'cssnano']);
 	grunt.registerTask('javascript', ['concat', 'uglify']);
 	grunt.registerTask('imageminnewer', ['newer:imagemin']);
 	grunt.registerTask('sprites', ['sprite']);
