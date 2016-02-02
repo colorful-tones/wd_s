@@ -129,7 +129,8 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				files: {
-					'style.css': 'assets/sass/style.scss'
+					'style.css': 'assets/sass/style.scss',
+					'pattern-library/patterns-dest/assets/style.css': 'pattern-library/patterns-dest/assets/sass/style.scss'
 				}
 			}
 		},
