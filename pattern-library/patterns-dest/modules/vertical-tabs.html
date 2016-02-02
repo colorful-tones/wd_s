@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../assets/style.css" rel="stylesheet" />
+    <link href="../assets/github.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vertical Tabs</title>
+  </head>
+  <body>
+    <div id="libraryContainer" class="pp-container">
+      <header class="pp-header">
+        <a href="/">
+          <img src="../assets/images/logo.svg" class="pp-header__logo">
+        </a> 
+        <div id="menuToggle" class="pp-menu-toggle">
+          <div class="pp-menu-toggle__hamburger">Menu</div>
+        </div>
+
+        <!-- #menuToggle .pp-menu-toggle -->
+      </header>
+
+      <!-- .pp-header -->
+      <div id="libraryContent" class="pp-content">
+        <div class="markdown__body">
+          <script src="../assets/js/vertical-tabs.js"></script>
+          ## Vertical Tabs TODO: Describe what vertical tabs is and how it is used in the application. ### Examples
+          <div class="vertical-tabs-container">
+            <div class="vertical-tabs">
+              <a href="javascript:void(0)" class="js-vertical-tab vertical-tab is-active" rel="tab1">Item 1</a> 
+              <a href="javascript:void(0)" class="js-vertical-tab vertical-tab" rel="tab2">Item 2</a> 
+              <a href="javascript:void(0)" class="js-vertical-tab vertical-tab" rel="tab3">Item 3</a> 
+              <a href="javascript:void(0)" class="js-vertical-tab vertical-tab" rel="tab4">Item 4</a> 
+            </div>
+            <div class="vertical-tab-content-container">
+              <a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading is-active" rel="tab1">Item 1</a> 
+              <div id="tab1" class="js-vertical-tab-content vertical-tab-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt pellentesque lorem, id suscipit dolor rutrum id. Morbi facilisis porta volutpat. Fusce adipiscing, mauris quis congue tincidunt, sapien purus suscipit odio, quis dictum
+                  odio tortor in sem. Ut sit amet libero nec orci mattis fringilla. Praesent eu ipsum in sapien tincidunt molestie sed ut magna. Nam accumsan dui at orci rhoncus pharetra tincidunt elit ullamcorper. Sed ac mauris ipsum. Nullam imperdiet
+                  sapien id purus pretium id aliquam mi ullamcorper.</p>
+              </div>
+              <a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading" rel="tab2">Item 2</a> 
+              <div id="tab2" class="js-vertical-tab-content vertical-tab-content">
+                <p>Ut laoreet augue et neque pretium non sagittis nibh pulvinar. Etiam ornare tincidunt orci quis ultrices. Pellentesque ac sapien ac purus gravida ullamcorper. Duis rhoncus sodales lacus, vitae adipiscing tellus pharetra sed. Praesent bibendum.</p>
+              </div>
+              <a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading" rel="tab3">Item 3</a> 
+              <div id="tab3" class="js-vertical-tab-content vertical-tab-content">
+                <p>Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra vel vestibulum in, porttitor ut sapien. Phasellus tempor lorem id justo ornare tincidunt. Nulla faucibus, purus eu placerat fermentum, velit
+                  mi iaculis nunc, bibendum tincidunt ipsum justo eu mauris. Nulla facilisi. Vestibulum vel lectus ac purus tempus suscipit nec sit amet eros. Nullam fringilla, enim eu lobortis dapibus, quam magna tincidunt nibh, sit amet imperdiet dolor
+                  justo congue turpis.</p>
+              </div>
+              <a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading" rel="tab4">Item 4</a> 
+              <div id="tab4" class="js-vertical-tab-content vertical-tab-content">
+                <p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus dui urna, mollis vel suscipit in, pharetra at ligula. Pellentesque a est vel est fermentum pellentesque sed sit amet dolor. Nunc in dapibus nibh.
+                  Aliquam erat volutpat. Phasellus vel dui sed nibh iaculis convallis id sit amet urna. Proin nec tellus quis justo consequat accumsan. Vivamus turpis enim, auctor eget placerat eget, aliquam ut sapien.</p>
+              </div>
+            </div>
+          </div>
+          ### Code ```html
+          <div class="vertical-tabs-container">
+            <div class="vertical-tabs">
+              <a href="javascript:void(0)" class="js-vertical-tab vertical-tab is-active" rel="tab1">Item 1</a> 
+              <a href="javascript:void(0)" class="js-vertical-tab vertical-tab" rel="tab2">Item 2</a> 
+              <a href="javascript:void(0)" class="js-vertical-tab vertical-tab" rel="tab3">Item 3</a> 
+              <a href="javascript:void(0)" class="js-vertical-tab vertical-tab" rel="tab4">Item 4</a> 
+            </div>
+            <div class="vertical-tab-content-container">
+              <a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading is-active" rel="tab1">Item 1</a> 
+              <div id="tab1" class="js-vertical-tab-content vertical-tab-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt pellentesque lorem, id suscipit dolor rutrum id. Morbi facilisis porta volutpat. Fusce adipiscing, mauris quis congue tincidunt, sapien purus suscipit odio, quis dictum
+                  odio tortor in sem. Ut sit amet libero nec orci mattis fringilla. Praesent eu ipsum in sapien tincidunt molestie sed ut magna. Nam accumsan dui at orci rhoncus pharetra tincidunt elit ullamcorper. Sed ac mauris ipsum. Nullam imperdiet
+                  sapien id purus pretium id aliquam mi ullamcorper.</p>
+              </div>
+              <a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading" rel="tab2">Item 2</a> 
+              <div id="tab2" class="js-vertical-tab-content vertical-tab-content">
+                <p>Ut laoreet augue et neque pretium non sagittis nibh pulvinar. Etiam ornare tincidunt orci quis ultrices. Pellentesque ac sapien ac purus gravida ullamcorper. Duis rhoncus sodales lacus, vitae adipiscing tellus pharetra sed. Praesent bibendum.</p>
+              </div>
+              <a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading" rel="tab3">Item 3</a> 
+              <div id="tab3" class="js-vertical-tab-content vertical-tab-content">
+                <p>Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra vel vestibulum in, porttitor ut sapien. Phasellus tempor lorem id justo ornare tincidunt. Nulla faucibus, purus eu placerat fermentum, velit
+                  mi iaculis nunc, bibendum tincidunt ipsum justo eu mauris. Nulla facilisi. Vestibulum vel lectus ac purus tempus suscipit nec sit amet eros. Nullam fringilla, enim eu lobortis dapibus, quam magna tincidunt nibh, sit amet imperdiet dolor
+                  justo congue turpis.</p>
+              </div>
+              <a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading" rel="tab4">Item 4</a> 
+              <div id="tab4" class="js-vertical-tab-content vertical-tab-content">
+                <p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus dui urna, mollis vel suscipit in, pharetra at ligula. Pellentesque a est vel est fermentum pellentesque sed sit amet dolor. Nunc in dapibus nibh.
+                  Aliquam erat volutpat. Phasellus vel dui sed nibh iaculis convallis id sit amet urna. Proin nec tellus quis justo consequat accumsan. Vivamus turpis enim, auctor eget placerat eget, aliquam ut sapien.</p>
+              </div>
+            </div>
+          </div>
+          ```
+        </div>
+
+        <!-- .markdown__body -->
+      </div>
+
+      <!-- #libraryContent .pp-content -->
+      <div id="menuOverlay" class="pp-open-overlay"></div>
+    </div>
+
+    <!-- #libraryContainer .pp-container -->
+    <nav class="pp-nav">
+      <h2 class="pp-nav__heading">
+        <a href="
+	    ../base/index.html
+	  ">Base</a> 
+      </h2>
+      <ul>
+        <li> <a href="../base/buttons.html">Buttons</a>  </li>
+        <li> <a href="../base/colors.html">Colors</a>  </li>
+        <li> <a href="../base/forms.html">Forms</a>  </li>
+        <li> <a href="../base/headings.html">Headings</a>  </li>
+        <li> <a href="../base/typography.html">Typography</a>  </li>
+      </ul>
+      <h2 class="pp-nav__heading">
+        <a href="
+	    index.html
+	  ">Modules</a> 
+      </h2>
+      <ul>
+        <li> <a href="accordion-tabs.html">Accordion / Tabs</a>  </li>
+        <li> <a href="hero-basic.html">Basic Hero</a>  </li>
+        <li> <a href="cards.html">Cards</a>  </li>
+        <li> <a href="icon-bullet-points.html">Icon Bullet Points</a>  </li>
+        <li> <a href="nav.html">Navigation</a>  </li>
+        <li> <a href="vertical-tabs.html">Vertical Tabs</a>  </li>
+      </ul>
+      <h2 class="pp-nav__heading">
+        <a href="
+	    ../views/index.html
+	  ">Views</a> 
+      </h2>
+      <ul>
+        <li> <a href="../views/article-template.html">Article Template</a>  </li>
+        <li> <a href="../views/home-page.html">Home Page</a>  </li>
+      </ul>
+      <h2 class="pp-nav__heading">
+        <a href="
+	    ../pattern-tests/index.html
+	  ">Pattern Tests</a> 
+      </h2>
+      <ul>
+        <li> <a href="../pattern-tests/gist-test.html">Embed Gist</a>  </li>
+      </ul>
+    </nav>
+
+    <!-- Show Code -->
+    <script>
+      $('a.js-show-code').on('click', function(e) {
+        $(this).hide();
+        $(this).siblings('.js-hide-code').css('display', 'inline-block');
+        $(this).parent().siblings('.snippets-table').show();
+        e.preventDefault();
+      })
+      $('a.js-hide-code').on('click', function(e) {
+        $(this).hide();
+        $(this).siblings('.js-show-code').css("display", "inline-block");
+        $(this).parent().siblings('.snippets-table').hide();
+        e.preventDefault();
+      });
+    </script>
+
+    <!-- Copy Code -->
+    <script>
+      $(document).ready(function() {
+        client = new ZeroClipboard($('.copy-source'), {
+          moviePath: '../assets/images/ZeroClipboard.swf'
+        })
+        client.on('dataRequested', function(client, args) {
+          var cell = $(this).parents("td.snippet");
+          var code = cell.children("pre").text();
+          client.setText(code);
+        });
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+    <script src="../assets/js/pp-navigation.js"></script>
+    <script src="../assets/js/zeroclipboard.min.js"></script>
+  </body>
+</html>

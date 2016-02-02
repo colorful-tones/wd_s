@@ -1,0 +1,19 @@
+@import "encode/encode";
+
+@import "_glob-patterns";
+
+@import "patterns-library-theme/theme";
+
+// Import all of the WP theme assets
+@import "bourbon";
+@import "theme-sass/utilities/variables/index";
+@import "neat";
+@import "theme-sass/utilities/mixins/index";
+
+@import "theme-sass/base/index";
+@import "theme-sass/structure/index";
+@import "theme-sass/modules/index";
+@import "theme-sass/plugins/index";
+@import "theme-sass/pagebuilder/index";
+@import "theme-sass/views/index";
+@import "theme-sass/widgets/index";

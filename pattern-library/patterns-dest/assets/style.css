@@ -1,0 +1,1124 @@
+/* line 4, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/assets/bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 9, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/assets/bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/* line 1, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_accordion-tabs.scss */
+.pattern-wrapper .accordion-tabs {
+  line-height: 1.5;
+  margin-bottom: 1.5em;
+  padding: 0;
+}
+
+/* line 20, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/assets/bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+.pattern-wrapper .accordion-tabs::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+@media screen and (max-width: 40em) {
+  /* line 1, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_accordion-tabs.scss */
+  .pattern-wrapper .accordion-tabs {
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+  }
+}
+
+/* line 27, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_accordion-tabs.scss */
+.pattern-wrapper .accordion-tabs .tab-header-and-content {
+  list-style: none;
+}
+
+@media screen and (min-width: 40em) {
+  /* line 27, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_accordion-tabs.scss */
+  .pattern-wrapper .accordion-tabs .tab-header-and-content {
+    display: inline;
+  }
+}
+
+/* line 34, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_accordion-tabs.scss */
+.pattern-wrapper .accordion-tabs .tab-header-and-content:first-child .tab-link {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+@media screen and (max-width: 40em) {
+  /* line 34, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_accordion-tabs.scss */
+  .pattern-wrapper .accordion-tabs .tab-header-and-content:first-child .tab-link {
+    border-top: 0;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  /* line 43, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_accordion-tabs.scss */
+  .pattern-wrapper .accordion-tabs .tab-header-and-content:last-child .tab-link {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+}
+
+/* line 51, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_accordion-tabs.scss */
+.pattern-wrapper .accordion-tabs .tab-link {
+  background-color: #fff;
+  border-top: 1px solid #dcdcdc;
+  color: #333;
+  display: block;
+  font-weight: bold;
+  padding: 0.75em 0.3125em;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 40em) {
+  /* line 51, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_accordion-tabs.scss */
+  .pattern-wrapper .accordion-tabs .tab-link {
+    display: inline-block;
+    border-top: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+}
+
+/* line 67, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_accordion-tabs.scss */
+.pattern-wrapper .accordion-tabs .tab-link:hover {
+  color: #477dca;
+}
+
+/* line 71, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_accordion-tabs.scss */
+.pattern-wrapper .accordion-tabs .tab-link:focus {
+  outline: none;
+}
+
+/* line 75, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_accordion-tabs.scss */
+.pattern-wrapper .accordion-tabs .tab-link.is-active {
+  background-color: #f7f7f7;
+}
+
+@media screen and (min-width: 40em) {
+  /* line 75, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_accordion-tabs.scss */
+  .pattern-wrapper .accordion-tabs .tab-link.is-active {
+    background-color: #f7f7f7;
+    border: 1px solid #dcdcdc;
+    border-bottom-color: #f7f7f7;
+    margin-bottom: -1px;
+  }
+}
+
+/* line 87, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_accordion-tabs.scss */
+.pattern-wrapper .accordion-tabs .tab-content {
+  background: #f7f7f7;
+  display: none;
+  padding: 1.5em 0.625em;
+  width: 100%;
+}
+
+@media screen and (min-width: 40em) {
+  /* line 87, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_accordion-tabs.scss */
+  .pattern-wrapper .accordion-tabs .tab-content {
+    border: 1px solid #dcdcdc;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    float: left;
+  }
+}
+
+/* line 1, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_cards.scss */
+.cards {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+/* line 7, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_cards.scss */
+.card {
+  -webkit-flex-basis: 15em;
+  -moz-flex-basis: 15em;
+  flex-basis: 15em;
+  -ms-flex-preferred-size: 15em;
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  flex-grow: 1;
+  -ms-flex-positive: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #f6f6f6;
+  border-radius: 3px;
+  border: 1px solid gainsboro;
+  box-shadow: 0 2px 4px #e6e6e6;
+  cursor: pointer;
+  margin: 0 1em 1.5em 1em;
+  position: relative;
+}
+
+/* line 35, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_cards.scss */
+.card .card-image {
+  overflow: hidden;
+  height: 150px;
+  max-height: 150px;
+  background-color: #F8F2B4;
+}
+
+/* line 41, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_cards.scss */
+.card .card-image img {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  width: 100%;
+  opacity: 1;
+}
+
+/* line 50, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_cards.scss */
+.card .card-header {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid gainsboro;
+  border-radius: 3px 3px 0 0;
+  font-weight: bold;
+  line-height: 1.5em;
+  padding: 0.5em 0.75em;
+}
+
+/* line 60, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_cards.scss */
+.card .card-copy {
+  font-size: 0.9em;
+  line-height: 1.5em;
+  padding: 0.75em 0.75em;
+}
+
+/* line 65, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_cards.scss */
+.card .card-copy p {
+  margin: 0 0 0.75em;
+}
+
+/* line 70, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_cards.scss */
+.card:focus, .card:hover {
+  cursor: pointer;
+}
+
+/* line 74, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_cards.scss */
+.card:focus img, .card:hover img {
+  opacity: 0.7;
+}
+
+/* line 79, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_cards.scss */
+.card:active {
+  background-color: #f6f6f6;
+}
+
+/* line 82, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_cards.scss */
+.card:active .card-header {
+  background-color: #f6f6f6;
+}
+
+/* line 1, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_hero-basic.scss */
+.hero {
+  background-position: 50% 50%;
+  /* This could be 50% 50%, 0 0, or really anything.  The world is your stinky little oyster! */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  margin-bottom: 2.1875rem;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  /* Add a slight overlay on our image */
+}
+
+@media screen and (min-width: 40rem) {
+  /* line 1, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_hero-basic.scss */
+  .hero {
+    background-position: 50% 0;
+    height: 18.75rem;
+  }
+}
+
+@media screen and (min-width: 85.375rem) {
+  /* line 1, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_hero-basic.scss */
+  .hero {
+    height: 28.125rem;
+  }
+}
+
+/* line 21, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_hero-basic.scss */
+.hero:after {
+  background-color: rgba(33, 117, 155, 0.4);
+  bottom: 0;
+  content: '';
+  left: -2000%;
+  position: absolute;
+  right: -2000%;
+  top: 0;
+  z-index: 1;
+}
+
+/* line 34, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_hero-basic.scss */
+.hero-container {
+  box-sizing: border-box;
+  height: auto;
+  padding: 4.375rem 3.125rem;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+@media screen and (min-width: 40rem) {
+  /* line 34, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_hero-basic.scss */
+  .hero-container {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 85.375rem) {
+  /* line 34, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_hero-basic.scss */
+  .hero-container {
+    padding: 6.25rem 3.125rem;
+  }
+}
+
+/* line 50, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_hero-basic.scss */
+.hero-container p {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+/* line 58, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_hero-basic.scss */
+.hero-title {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+/* line 68, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_hero-basic.scss */
+.button {
+  background-color: #21759b;
+  border-radius: 0.375rem;
+  color: #ffffff;
+  display: inline-block;
+  height: 2.75rem;
+  padding: 0 2.75rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+/* line 79, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_hero-basic.scss */
+.button:hover {
+  background-color: #1d6586;
+  text-decoration: none;
+}
+
+/* line 86, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_hero-basic.scss */
+.ghost {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
+/* line 90, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_hero-basic.scss */
+.ghost:hover {
+  background-color: #ffffff;
+  border-color: transparent;
+  color: #21759b;
+}
+
+/* line 98, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_hero-basic.scss */
+.button-text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  display: block;
+  font-weight: 600;
+}
+
+/* line 3, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_icon-bullet-points.scss */
+.bullets {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 1rem;
+  overflow: auto;
+  padding: 0;
+}
+
+/* line 14, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_icon-bullet-points.scss */
+.bullets .bullet {
+  -webkit-flex-basis: 20rem;
+  -moz-flex-basis: 20rem;
+  flex-basis: 20rem;
+  -ms-flex-preferred-size: 20rem;
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  flex-grow: 1;
+  -ms-flex-positive: 1;
+}
+
+/* line 20, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_icon-bullet-points.scss */
+.bullets .bullet-icon {
+  background: #21759b;
+  border-radius: 50%;
+  float: left;
+  height: 3.5rem;
+  padding: 0.875rem;
+  width: 3.5rem;
+}
+
+/* line 28, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_icon-bullet-points.scss */
+.bullets .bullet-icon img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 35, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_icon-bullet-points.scss */
+.bullets .bullet-icon-1 {
+  background: #21759b;
+}
+
+/* line 39, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_icon-bullet-points.scss */
+.bullets .bullet-icon-2 {
+  background: #219b5b;
+}
+
+/* line 43, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_icon-bullet-points.scss */
+.bullets .bullet-icon-3 {
+  background: #9b7021;
+}
+
+/* line 47, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_icon-bullet-points.scss */
+.bullets .bullet-icon-4 {
+  background: #9b4721;
+}
+
+/* line 51, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_icon-bullet-points.scss */
+.bullets .bullet-icon-5 {
+  background: #9b2124;
+}
+
+/* line 55, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_icon-bullet-points.scss */
+.bullets .bullet-icon-6 {
+  background: #219b98;
+}
+
+/* line 59, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_icon-bullet-points.scss */
+.bullets .bullet-icon-7 {
+  background: #9b2175;
+}
+
+/* line 63, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_icon-bullet-points.scss */
+.bullets .bullet-icon-8 {
+  background: #47219b;
+}
+
+/* line 67, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_icon-bullet-points.scss */
+.bullets .bullet-content {
+  margin-left: 4.9rem;
+  margin-bottom: 2rem;
+}
+
+/* line 73, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_icon-bullet-points.scss */
+.bullets h2 {
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+  color: #ffffff;
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 0 0 0.5833333333rem 0;
+  padding-top: 0.5rem;
+}
+
+/* line 83, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_icon-bullet-points.scss */
+.bullets li {
+  list-style: none;
+}
+
+/* line 88, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_icon-bullet-points.scss */
+.bullets p {
+  color: #808080;
+}
+
+/* line 92, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_icon-bullet-points.scss */
+.bullets img {
+  max-width: 100%;
+}
+
+/* line 1, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_vertical-tabs.scss */
+.vertical-tabs-container {
+  border-radius: 3px;
+  border: 1px solid gainsboro;
+  margin-bottom: 1.5em;
+  overflow: hidden;
+}
+
+/* line 20, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/assets/bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+.vertical-tabs-container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 26, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_vertical-tabs.scss */
+.vertical-tabs-container li {
+  list-style: none;
+}
+
+/* line 30, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_vertical-tabs.scss */
+.vertical-tabs-container a {
+  color: #477DCA;
+  text-decoration: none;
+}
+
+/* line 35, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_vertical-tabs.scss */
+.vertical-tabs-container .vertical-tabs {
+  display: none;
+}
+
+@media screen and (min-width: 40em) {
+  /* line 35, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_vertical-tabs.scss */
+  .vertical-tabs-container .vertical-tabs {
+    background-color: white;
+    display: inline;
+    float: left;
+    height: 18.75em;
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  /* line 47, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_vertical-tabs.scss */
+  .vertical-tabs-container .vertical-tab {
+    border-bottom: 1px solid gainsboro;
+    display: block;
+    font-weight: bold;
+    margin-right: -1px;
+    padding: 0.75em 0.3125em;
+  }
+  /* line 55, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_vertical-tabs.scss */
+  .vertical-tabs-container .vertical-tab.is-active {
+    background-color: #f6f6f6;
+    margin-right: -1px;
+  }
+}
+
+/* line 62, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_vertical-tabs.scss */
+.vertical-tabs-container a.vertical-tab-accordion-heading,
+.vertical-tabs-container a.vertical-tab {
+  color: #333;
+}
+
+/* line 67, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_vertical-tabs.scss */
+.vertical-tabs-container .vertical-tab:focus {
+  outline: none;
+}
+
+/* line 71, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_vertical-tabs.scss */
+.vertical-tabs-container .vertical-tab-content-container {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 75, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_vertical-tabs.scss */
+.vertical-tabs-container .vertical-tab-content-container a:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 40em) {
+  /* line 71, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_vertical-tabs.scss */
+  .vertical-tabs-container .vertical-tab-content-container {
+    height: 18.75em;
+    width: 80%;
+    background-color: #f6f6f6;
+    display: inline-block;
+  }
+}
+
+/* line 86, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_vertical-tabs.scss */
+.vertical-tabs-container .vertical-tab-content {
+  background-color: #f6f6f6;
+  padding: 1.5em 0.625em;
+}
+
+/* line 90, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_vertical-tabs.scss */
+.vertical-tabs-container .vertical-tab-content p {
+  color: #333;
+  line-height: 1.5em;
+}
+
+@media screen and (min-width: 40em) {
+  /* line 86, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_vertical-tabs.scss */
+  .vertical-tabs-container .vertical-tab-content {
+    border: none;
+    display: none;
+  }
+}
+
+/* line 101, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_vertical-tabs.scss */
+.vertical-tabs-container .vertical-tab-accordion-heading {
+  background-color: white;
+  border-top: 1px solid gainsboro;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  padding: 0.75em 0.3125em;
+}
+
+/* line 109, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_vertical-tabs.scss */
+.vertical-tabs-container .vertical-tab-accordion-heading:focus, .vertical-tabs-container .vertical-tab-accordion-heading:hover {
+  color: #477DCA;
+}
+
+/* line 114, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_vertical-tabs.scss */
+.vertical-tabs-container .vertical-tab-accordion-heading:first-child {
+  border-top: none;
+}
+
+/* line 118, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_vertical-tabs.scss */
+.vertical-tabs-container .vertical-tab-accordion-heading.is-active {
+  background: #f6f6f6;
+  border-bottom: none;
+}
+
+@media screen and (min-width: 40em) {
+  /* line 101, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns/_vertical-tabs.scss */
+  .vertical-tabs-container .vertical-tab-accordion-heading {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../assets/fonts/OpenSans-Light.woff2") format("woff2"), url("../assets/fonts/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../assets/fonts/OpenSans-Regular.woff2") format("woff2"), url("../assets/fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../assets/fonts/OpenSans-Italic.woff2") format("woff2"), url("../assets/fonts/OpenSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../assets/fonts/OpenSans-Bold.woff2") format("woff2"), url("../assets/fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url("../assets/fonts/inconsolata.woff2") format("woff2"), url("../assets/fonts/inconsolata.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 1, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_scaffold.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 5, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_scaffold.scss */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* line 11, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_scaffold.scss */
+body {
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+/* line 17, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_scaffold.scss */
+.pp-container {
+  position: absolute;
+  z-index: 200;
+  min-height: 100%;
+  width: 100%;
+  right: 0;
+  transition: all 200ms ease;
+  background-color: #fff;
+}
+
+/* line 26, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_scaffold.scss */
+.pp-container.open {
+  right: 350px;
+}
+
+/* line 30, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_scaffold.scss */
+.pp-container.open .pp-menu-toggle__hamburger {
+  background-color: transparent;
+}
+
+/* line 33, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_scaffold.scss */
+.pp-container.open .pp-menu-toggle__hamburger:before, .pp-container.open .pp-menu-toggle__hamburger:after {
+  top: 0;
+}
+
+/* line 38, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_scaffold.scss */
+.pp-container.open .pp-menu-toggle__hamburger:before {
+  transform: rotate(-45deg);
+}
+
+/* line 42, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_scaffold.scss */
+.pp-container.open .pp-menu-toggle__hamburger:after {
+  transform: rotate(45deg);
+}
+
+/* line 47, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_scaffold.scss */
+.pp-container.open .pp-open-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+/* line 59, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_scaffold.scss */
+.pattern-wrapper {
+  max-width: 750px;
+  margin: 0 20px;
+}
+
+@media (min-width: 790px) {
+  /* line 59, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_scaffold.scss */
+  .pattern-wrapper {
+    margin: 0 auto;
+  }
+}
+
+/* line 3, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_color-swatch.scss */
+.library__color-swatch {
+  /*! json-encode: "#21759b" */
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 15px;
+  width: 48%;
+  border: 1px solid #dadada;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+/* line 18, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/node_modules/sass-json-export/stylesheets/encode/mixins/_json.scss */
+.library__color-swatch body::before {
+  content: '"#21759b"';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  width: 0;
+}
+
+/* line 29, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/node_modules/sass-json-export/stylesheets/encode/mixins/_json.scss */
+.library__color-swatch head {
+  font-family: '"#21759b"';
+}
+
+@media -json-encode {
+  /* line 37, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/node_modules/sass-json-export/stylesheets/encode/mixins/_json.scss */
+  .library__color-swatch json {
+    json: '"#21759b"';
+  }
+}
+
+/* line 13, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_color-swatch.scss */
+.library__color-swatch:nth-child(even) {
+  margin-right: 0;
+}
+
+@media (min-width: 790px) {
+  /* line 3, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_color-swatch.scss */
+  .library__color-swatch {
+    width: 20%;
+  }
+  /* line 20, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_color-swatch.scss */
+  .library__color-swatch:nth-child(even) {
+    margin-right: 2%;
+  }
+  /* line 24, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_color-swatch.scss */
+  .library__color-swatch:nth-child(4n+4) {
+    margin-right: 0;
+  }
+}
+
+/* line 30, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_color-swatch.scss */
+.library__color-swatch__preview {
+  display: block;
+  margin-bottom: 10px;
+  height: 75px;
+}
+
+/* line 36, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_color-swatch.scss */
+.library__color-swatch__details {
+  padding: 0;
+  list-style: none;
+}
+
+/* line 3, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_header.scss */
+.pp-header {
+  position: relative;
+  margin-bottom: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 60px;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #dadada;
+}
+
+/* line 13, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_header.scss */
+.pp-header__logo {
+  max-height: 30px;
+  margin-top: 15px;
+}
+
+/* line 18, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_header.scss */
+.pp-menu-toggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* line 28, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_header.scss */
+.pp-menu-toggle__hamburger {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 5px;
+  float: right;
+  text-indent: -999em;
+  background-color: black;
+  transition: all 200ms ease;
+}
+
+/* line 40, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_header.scss */
+.pp-menu-toggle__hamburger:before, .pp-menu-toggle__hamburger:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  display: block;
+  width: 25px;
+  height: 5px;
+  background-color: black;
+  border-radius: 3px;
+  transition: all 200ms ease;
+}
+
+/* line 52, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_header.scss */
+.pp-menu-toggle__hamburger:before {
+  top: -9px;
+}
+
+/* line 56, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_header.scss */
+.pp-menu-toggle__hamburger:after {
+  top: 9px;
+}
+
+/* line 10, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_markdown-body.scss */
+.markdown__body:not(.library__example) > h1:not(.library__example) {
+  font-size: 32px;
+  font-weight: bold;
+  border-bottom: 1px solid #dadada;
+  padding-bottom: 10px;
+}
+
+/* line 17, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_markdown-body.scss */
+.markdown__body:not(.library__example) > h2:not(.library__example) {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #dadada;
+  padding-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* line 25, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_markdown-body.scss */
+.markdown__body:not(.library__example) > h3:not(.library__example) {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* line 32, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_markdown-body.scss */
+.markdown__body:not(.library__example) > p:not(.library__example) {
+  margin-bottom: 1em;
+  font-size: 18px;
+}
+
+/* line 36, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_markdown-body.scss */
+.markdown__body:not(.library__example) > p:not(.library__example) a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+/* line 40, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_markdown-body.scss */
+.markdown__body:not(.library__example) > p:not(.library__example) a:hover {
+  text-decoration: underline;
+}
+
+/* line 45, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_markdown-body.scss */
+.markdown__body:not(.library__example) > p:not(.library__example) em {
+  font-style: italic;
+}
+
+/* line 50, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_markdown-body.scss */
+.markdown__body:not(.library__example) > code:not(.library__example) {
+  padding: 3px;
+  background-color: #f2f2f2;
+  border: 1px solid #dadada;
+  border-radius: 3px;
+  font-family: "Inconsolata", Courier, monospace;
+  font-size: 16px;
+}
+
+/* line 58, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_markdown-body.scss */
+.markdown__body:not(.library__example) > code:not(.library__example).hljs {
+  padding: 15px;
+  line-height: 1.5em;
+}
+
+/* line 66, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_markdown-body.scss */
+.pattern-snippet {
+  margin-bottom: 4.5em;
+  margin-top: 4.5em;
+  padding: 0 1em;
+}
+
+/* line 71, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_markdown-body.scss */
+.pattern-snippet table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* line 78, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_markdown-body.scss */
+.pattern-snippet th {
+  font-weight: bold;
+  padding: 0.75em 0;
+  text-align: left;
+}
+
+/* line 84, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_markdown-body.scss */
+.pattern-snippet td {
+  padding: 0.75em 0;
+}
+
+/* line 88, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_markdown-body.scss */
+.pattern-snippet tr,
+.pattern-snippet td,
+.pattern-snippet th {
+  vertical-align: middle;
+}
+
+/* line 94, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_markdown-body.scss */
+.pattern-snippet pre {
+  background-color: #f8f8f8;
+  border-top: 2px solid silver;
+  height: 300px;
+  line-height: 1em;
+  overflow: auto;
+}
+
+/* line 102, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_markdown-body.scss */
+.pattern-snippet code {
+  font-size: 0.6em;
+  line-height: 1.4em;
+  overflow: scroll;
+}
+
+/* line 109, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_markdown-body.scss */
+.snippets-table {
+  display: none;
+}
+
+/* line 112, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_markdown-body.scss */
+.snippets-table td {
+  border-bottom: 0;
+}
+
+/* line 119, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_markdown-body.scss */
+.snippet .copy-source-container {
+  min-height: 3.4em;
+}
+
+/* line 123, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_markdown-body.scss */
+.snippet:nth-of-type(1) .copy-source {
+  background: #e98065;
+}
+
+/* line 127, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_markdown-body.scss */
+.snippet:nth-of-type(2) .copy-source {
+  background: #55a1d4;
+}
+
+/* line 131, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_markdown-body.scss */
+.snippet:nth-of-type(3) .copy-source {
+  background: #e9c05b;
+}
+
+/* line 135, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_markdown-body.scss */
+.snippet .copy-source {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.5em;
+  font-weight: 800;
+  padding: 0.4em 1em;
+  text-transform: uppercase;
+}
+
+/* line 147, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_markdown-body.scss */
+.snippet .copy-source:hover, .snippet .copy-source:active {
+  background-color: #666666;
+  color: #fff;
+}
+
+/* line 155, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_markdown-body.scss */
+.pattern-control {
+  text-align: center;
+}
+
+/* line 158, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_markdown-body.scss */
+.pattern-control .js-hide-code {
+  display: none;
+}
+
+/* line 1, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_nav.scss */
+.pp-nav {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  overflow-y: scroll;
+  width: 350px;
+  height: 100%;
+  background-color: #4a4a4a;
+  padding: 15px 0;
+  color: #fff;
+  box-shadow: 5px 0 10px -2px rgba(0, 0, 0, 0.2) inset;
+}
+
+/* line 14, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_nav.scss */
+.pp-nav a {
+  width: 100%;
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+}
+
+/* line 21, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_nav.scss */
+.pp-nav ul {
+  margin: 0 0 50px;
+  padding-left: 0;
+  list-style: none;
+}
+
+/* line 27, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_nav.scss */
+.pp-nav li {
+  border-bottom: 1px solid #717171;
+}
+
+/* line 30, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_nav.scss */
+.pp-nav li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* line 35, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_nav.scss */
+.pp-nav li a:hover {
+  background-color: #313131;
+}
+
+/* line 43, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_nav.scss */
+.pp-nav__heading a {
+  color: #B8B8B8;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 3, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_table.scss */
+.markdown__body:not(.library__example) table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+/* line 7, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_table.scss */
+.markdown__body:not(.library__example) table th {
+  border-bottom: 2px solid #dadada;
+  padding: 8px;
+}
+
+/* line 12, /Applications/MAMP/htdocs/wd-s-fork.dev/wp-content/themes/wd_s/pattern-library/patterns-dest/assets/sass/patterns-library-theme/_table.scss */
+.markdown__body:not(.library__example) table td {
+  border-bottom: 1px solid #dadada;
+  padding: 8px;
+}
+
+/*# sourceMappingURL=style.css.map */

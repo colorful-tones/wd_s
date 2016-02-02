@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../assets/style.css" rel="stylesheet" />
+    <link href="../assets/github.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic Hero</title>
+  </head>
+  <body>
+    <div id="libraryContainer" class="pp-container">
+      <header class="pp-header">
+        <a href="/">
+          <img src="../assets/images/logo.svg" class="pp-header__logo">
+        </a> 
+        <div id="menuToggle" class="pp-menu-toggle">
+          <div class="pp-menu-toggle__hamburger">Menu</div>
+        </div>
+
+        <!-- #menuToggle .pp-menu-toggle -->
+      </header>
+
+      <!-- .pp-header -->
+      <div id="libraryContent" class="pp-content">
+        <div class="markdown__body">
+          <div class="pattern-wrapper">
+            <h1 class="pattern-title">Basic Hero with Overlay</h1>
+            <p class="pattern-description">A basic hero image with an overlay for ease of reading with a title, some text, and a button.</p>
+
+            <!-- Begin Your Code -->
+            <section class="hero image-as-background" style="background-image: url('http://www.placecage.com/1600/450');">
+              <div class="hero-container">
+                <header>
+                  <h1 class="hero-title">This is a large hero section</h1>
+                </header>
+                <div class="hero-content">
+                  <p>This is the text that describes the hero section. There is a blue button below me!</p>
+                  <p>
+                    <a href="#" class="button"> <span class="button-text">Read More</span>  </a> 
+                  </p>
+                </div>
+
+                <!-- .hero-content -->
+              </div>
+
+              <!-- .hero-container -->
+            </section>
+
+            <!-- .hero -->
+            <section class="hero image-as-background" style="background-image: url('http://www.placecage.com/1600/450');">
+              <div class="hero-container">
+                <header>
+                  <h1 class="hero-title">This is a large hero section</h1>
+                </header>
+                <div class="hero-content">
+                  <p>This is the text that describes the hero section. There is a transparent button below me!</p>
+                  <p>
+                    <a href="#" class="button"> <span class="button-text">Read More</span>  </a> 
+                  </p>
+                </div>
+
+                <!-- .hero-content -->
+              </div>
+
+              <!-- .hero-container -->
+            </section>
+
+            <!-- .hero -->
+          </div>
+
+          <!-- .pattern-wrapper -->
+          <div class="pattern-snippet">
+            <div class="pattern-control">
+              <a href="#" class="js-show-code">Show Code</a> 
+              <a href="#" class="js-hide-code">Hide Code</a> 
+            </div>
+            <table class="snippets-table">
+              <tbody>
+                <tr>
+                  <td class="snippet">
+                    <div class="copy-source-container">
+                      <a href="javascript:void(0)" class="copy-source">Copy HTML</a> 
+                    </div>
+
+                    <!-- .copy-source-container -->
+                    <pre><code class="language-html">&lt;div class=&quot;wrap&quot;&gt;
+    &lt;h1 class=&quot;pen-title&quot;&gt;Basic Hero with Overlay&lt;/h1&gt;
+    &lt;p class=&quot;pen-description&quot;&gt;A basic hero image with an overlay for ease of reading with a title, some text, and a button.&lt;/p&gt;
+    &lt;!-- Begin Your Code --&gt;
+    &lt;section class=&quot;hero image-as-background&quot; style=&quot;background-image: url(&#39;http://www.placecage.com/1600/450&#39;);&quot;&gt;
+        &lt;div class=&quot;hero-container&quot;&gt;
+            &lt;header&gt;
+                &lt;h1 class=&quot;hero-title&quot;&gt;This is a large hero section&lt;/h1&gt;
+            &lt;/header&gt;
+            &lt;div class=&quot;hero-content&quot;&gt;
+                &lt;p&gt;This is the text that describes the hero section. There is a blue button below me!&lt;/p&gt;
+                &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;&lt;span class=&quot;button-text&quot;&gt;Read More&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+            &lt;/div&gt;&lt;!-- .hero-content --&gt;
+        &lt;/div&gt;&lt;!-- .hero-container --&gt;
+    &lt;/section&gt;&lt;!-- .hero --&gt;
+    &lt;section class=&quot;hero image-as-background&quot; style=&quot;background-image: url(&#39;http://www.placecage.com/1600/450&#39;);&quot;&gt;
+        &lt;div class=&quot;hero-container&quot;&gt;
+            &lt;header&gt;
+                &lt;h1 class=&quot;hero-title&quot;&gt;This is a large hero section&lt;/h1&gt;
+            &lt;/header&gt;
+            &lt;div class=&quot;hero-content&quot;&gt;
+                &lt;p&gt;This is the text that describes the hero section. There is a transparent button below me!&lt;/p&gt;
+                &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;&lt;span class=&quot;button-text&quot;&gt;Read More&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+            &lt;/div&gt;&lt;!-- .hero-content --&gt;
+        &lt;/div&gt;&lt;!-- .hero-container --&gt;
+    &lt;/section&gt;&lt;!-- .hero --&gt;
+&lt;/div&gt;&lt;!-- .wrap --&gt;</code></pre>
+                  </td>
+                  <td class="snippet">
+                    <div class="copy-source-container">
+                      <a href="javascript:void(0)" class="copy-source">Copy Scss</a> 
+                    </div>
+                    <pre><code class="language-scss"><span class="class">.hero</span>  {
+    <span class="attribute">background-position</span> <span class="value">: <span class="number">50</span> % <span class="number">50</span> %;</span>  <span class="comment">/* This could be 50% 50%, 0 0, or really anything.  The world is your stinky little oyster! */</span> 
+    <span class="attribute">background-repeat</span> <span class="value">: no-repeat;</span> 
+    <span class="attribute">background-size</span> <span class="value">: cover;</span> 
+    <span class="attribute">height</span> <span class="value">: auto;</span> 
+    <span class="attribute">margin-bottom</span> <span class="value">: rem(<span class="number">35</span> );</span> 
+    <span class="attribute">overflow</span> <span class="value">: hidden;</span> 
+    <span class="attribute">position</span> <span class="value">: relative;</span> 
+    <span class="attribute">width</span> <span class="value">: <span class="number">100</span> %;</span> 
+    <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> media</span> ($phone-landscape) {</span> 
+        <span class="attribute">background-position</span> <span class="value">: <span class="number">50</span> % <span class="number">0</span> ;</span> 
+        <span class="attribute">height</span> <span class="value">: rem(<span class="number">300</span> );</span> 
+    }
+    <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> media</span> ($desktop) {</span> 
+        <span class="attribute">height</span> <span class="value">: rem(<span class="number">450</span> );</span> 
+    }
+    <span class="comment">/* Add a slight overlay on our image */</span> 
+    &amp;<span class="pseudo">:after</span>  {
+        <span class="attribute">background-color</span> <span class="value">: rgba($color-indigo, .<span class="number">4</span> );</span> 
+        <span class="attribute">bottom</span> <span class="value">: <span class="number">0</span> ;</span> 
+        <span class="attribute">content</span> <span class="value">: <span class="string">''</span> ;</span> 
+        <span class="attribute">left</span> <span class="value">: -<span class="number">2000</span> %;</span> 
+        <span class="attribute">position</span> <span class="value">: absolute;</span> 
+        <span class="attribute">right</span> <span class="value">: -<span class="number">2000</span> %;</span> 
+        <span class="attribute">top</span> <span class="value">: <span class="number">0</span> ;</span> 
+        <span class="attribute">z-index</span> <span class="value">: <span class="number">1</span> ;</span> 
+    }
+}
+<span class="comment">// Style the container holding our hero contents</span> 
+<span class="class">.hero-container</span>  {
+    <span class="attribute">box-sizing</span> <span class="value">: border-box;</span> 
+    <span class="attribute">height</span> <span class="value">: auto;</span> 
+    <span class="attribute">padding</span> <span class="value">: rem(<span class="number">70</span> ) rem(<span class="number">50</span> );</span> 
+    <span class="attribute">position</span> <span class="value">: relative;</span> 
+    <span class="attribute">text-align</span> <span class="value">: center;</span> 
+    <span class="attribute">z-index</span> <span class="value">: <span class="number">2</span> ;</span> 
+    <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> media</span> ($phone-landscape) {</span> 
+        <span class="attribute">height</span> <span class="value">: <span class="number">100</span> %;</span> 
+    }
+    <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> media</span> ($desktop) {</span> 
+        <span class="attribute">padding</span> <span class="value">: rem(<span class="number">100</span> ) rem(<span class="number">50</span> );</span> 
+    }
+    <span class="tag">p</span>  {
+        <span class="attribute">color</span> <span class="value">: $color-white;</span> 
+        <span class="attribute">font-family</span> <span class="value">: $font-sans;</span> 
+        <span class="attribute">font-size</span> <span class="value">: <span class="number">16</span> px;</span> 
+        <span class="attribute">letter-spacing</span> <span class="value">: <span class="number">1</span> px;</span> 
+    }
+}
+<span class="class">.hero-title</span>  {
+    <span class="attribute">color</span> <span class="value">: $color-white;</span> 
+    <span class="attribute">font-family</span> <span class="value">: $font-sans;</span> 
+    <span class="attribute">font-size</span> <span class="value">: <span class="number">36</span> px;</span> 
+    <span class="attribute">font-weight</span> <span class="value">: <span class="number">700</span> ;</span> 
+    <span class="attribute">letter-spacing</span> <span class="value">: <span class="number">1</span> px;</span> 
+    <span class="attribute">margin-bottom</span> <span class="value">: <span class="number">0</span> ;</span> 
+}
+<span class="comment">// Toss some styles on that lil ole button</span> 
+<span class="class">.button</span>  {
+    <span class="attribute">background-color</span> <span class="value">: $color-indigo;</span> 
+    <span class="attribute">border-radius</span> <span class="value">: rem(<span class="number">6</span> );</span> 
+    <span class="attribute">color</span> <span class="value">: $color-white;</span> 
+    <span class="attribute">display</span> <span class="value">: inline-block;</span> 
+    <span class="attribute">height</span> <span class="value">: rem(<span class="number">44</span> );</span> 
+    <span class="attribute">padding</span> <span class="value">: <span class="number">0</span>  rem(<span class="number">44</span> );</span> 
+    <span class="attribute">text-decoration</span> <span class="value">: none;</span> 
+    <span class="attribute">text-transform</span> <span class="value">: uppercase;</span> 
+    <span class="attribute">transition</span> <span class="value">: all <span class="number">0.2</span> s ease;</span> 
+    &amp;<span class="pseudo">:hover</span>  {
+        <span class="attribute">background-color</span> <span class="value">: darken($color-indigo, <span class="number">5</span> %);</span> 
+        <span class="attribute">text-decoration</span> <span class="value">: none;</span> 
+    }
+}
+<span class="comment">// Styles for a "ghost" button - a button with no background color, but with a thin border</span> 
+<span class="class">.ghost</span>  {
+    <span class="attribute">background-color</span> <span class="value">: transparent;</span> 
+    <span class="attribute">border</span> <span class="value">: <span class="number">1</span> px solid $color-white;</span> 
+    &amp;<span class="pseudo">:hover</span>  {
+        <span class="attribute">background-color</span> <span class="value">: $color-white;</span> 
+        <span class="attribute">border-color</span> <span class="value">: transparent;</span> 
+        <span class="attribute">color</span> <span class="value">: $color-indigo;</span> 
+    }
+}
+<span class="comment">// Vertically center the text within our button link</span> 
+<span class="class">.button-text</span>  {
+    <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> vertical-align</span> (middle);</span> 
+    <span class="attribute">display</span> <span class="value">: block;</span> 
+    <span class="attribute">font-weight</span> <span class="value">: <span class="number">600</span> ;</span> 
+}</code></pre>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- .pattern-snippet -->
+        </div>
+
+        <!-- .markdown__body -->
+      </div>
+
+      <!-- #libraryContent .pp-content -->
+      <div id="menuOverlay" class="pp-open-overlay"></div>
+    </div>
+
+    <!-- #libraryContainer .pp-container -->
+    <nav class="pp-nav">
+      <h2 class="pp-nav__heading">
+        <a href="
+	    ../base/index.html
+	  ">Base</a> 
+      </h2>
+      <ul>
+        <li> <a href="../base/buttons.html">Buttons</a>  </li>
+        <li> <a href="../base/colors.html">Colors</a>  </li>
+        <li> <a href="../base/forms.html">Forms</a>  </li>
+        <li> <a href="../base/headings.html">Headings</a>  </li>
+        <li> <a href="../base/typography.html">Typography</a>  </li>
+      </ul>
+      <h2 class="pp-nav__heading">
+        <a href="
+	    index.html
+	  ">Modules</a> 
+      </h2>
+      <ul>
+        <li> <a href="accordion-tabs.html">Accordion / Tabs</a>  </li>
+        <li> <a href="hero-basic.html">Basic Hero</a>  </li>
+        <li> <a href="cards.html">Cards</a>  </li>
+        <li> <a href="icon-bullet-points.html">Icon Bullet Points</a>  </li>
+        <li> <a href="nav.html">Navigation</a>  </li>
+        <li> <a href="vertical-tabs.html">Vertical Tabs</a>  </li>
+      </ul>
+      <h2 class="pp-nav__heading">
+        <a href="
+	    ../views/index.html
+	  ">Views</a> 
+      </h2>
+      <ul>
+        <li> <a href="../views/article-template.html">Article Template</a>  </li>
+        <li> <a href="../views/home-page.html">Home Page</a>  </li>
+      </ul>
+      <h2 class="pp-nav__heading">
+        <a href="
+	    ../pattern-tests/index.html
+	  ">Pattern Tests</a> 
+      </h2>
+      <ul>
+        <li> <a href="../pattern-tests/gist-test.html">Embed Gist</a>  </li>
+      </ul>
+    </nav>
+
+    <!-- Show Code -->
+    <script>
+      $('a.js-show-code').on('click', function(e) {
+        $(this).hide();
+        $(this).siblings('.js-hide-code').css('display', 'inline-block');
+        $(this).parent().siblings('.snippets-table').show();
+        e.preventDefault();
+      })
+      $('a.js-hide-code').on('click', function(e) {
+        $(this).hide();
+        $(this).siblings('.js-show-code').css("display", "inline-block");
+        $(this).parent().siblings('.snippets-table').hide();
+        e.preventDefault();
+      });
+    </script>
+
+    <!-- Copy Code -->
+    <script>
+      $(document).ready(function() {
+        client = new ZeroClipboard($('.copy-source'), {
+          moviePath: '../assets/images/ZeroClipboard.swf'
+        })
+        client.on('dataRequested', function(client, args) {
+          var cell = $(this).parents("td.snippet");
+          var code = cell.children("pre").text();
+          client.setText(code);
+        });
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+    <script src="../assets/js/pp-navigation.js"></script>
+    <script src="../assets/js/zeroclipboard.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../assets/style.css" rel="stylesheet" />
+    <link href="../assets/github.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modules</title>
+  </head>
+  <body>
+    <div id="libraryContainer" class="pp-container">
+      <header class="pp-header">
+        <a href="/">
+          <img src="../assets/images/logo.svg" class="pp-header__logo">
+        </a> 
+        <div id="menuToggle" class="pp-menu-toggle">
+          <div class="pp-menu-toggle__hamburger">Menu</div>
+        </div>
+
+        <!-- #menuToggle .pp-menu-toggle -->
+      </header>
+
+      <!-- .pp-header -->
+      <div id="libraryContent" class="pp-content">
+        <div class="markdown__body">
+          <div>
+            <h1>Modules</h1>
+            <p>TODO: Describe what an module is</p>
+            <a name="hero-basic"></a> 
+            <div class="markdown__body">
+              <div class="pattern-wrapper">
+                <h1 class="pattern-title">Basic Hero with Overlay</h1>
+                <p class="pattern-description">A basic hero image with an overlay for ease of reading with a title, some text, and a button.</p>
+
+                <!-- Begin Your Code -->
+                <section class="hero image-as-background" style="background-image: url('http://www.placecage.com/1600/450');">
+                  <div class="hero-container">
+                    <header>
+                      <h1 class="hero-title">This is a large hero section</h1>
+                    </header>
+                    <div class="hero-content">
+                      <p>This is the text that describes the hero section. There is a blue button below me!</p>
+                      <p>
+                        <a href="#" class="button"> <span class="button-text">Read More</span>  </a> 
+                      </p>
+                    </div>
+
+                    <!-- .hero-content -->
+                  </div>
+
+                  <!-- .hero-container -->
+                </section>
+
+                <!-- .hero -->
+                <section class="hero image-as-background" style="background-image: url('http://www.placecage.com/1600/450');">
+                  <div class="hero-container">
+                    <header>
+                      <h1 class="hero-title">This is a large hero section</h1>
+                    </header>
+                    <div class="hero-content">
+                      <p>This is the text that describes the hero section. There is a transparent button below me!</p>
+                      <p>
+                        <a href="#" class="button"> <span class="button-text">Read More</span>  </a> 
+                      </p>
+                    </div>
+
+                    <!-- .hero-content -->
+                  </div>
+
+                  <!-- .hero-container -->
+                </section>
+
+                <!-- .hero -->
+              </div>
+
+              <!-- .pattern-wrapper -->
+              <div class="pattern-snippet">
+                <div class="pattern-control">
+                  <a href="#" class="js-show-code">Show Code</a> 
+                  <a href="#" class="js-hide-code">Hide Code</a> 
+                </div>
+                <pre><code>&lt;table class=&quot;snippets-table&quot;&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;snippet&quot;&gt;
+                &lt;div class=&quot;copy-source-container&quot;&gt;
+                    &lt;a href=&quot;javascript:void(0)&quot; class=&quot;copy-source&quot;&gt;Copy HTML&lt;/a&gt;
+                &lt;/div&gt;&lt;!-- .copy-source-container --&gt;</code></pre>
+                <p>{{#markdown}}</p>
+                <pre><code class="language-html">&lt;div class=&quot;wrap&quot;&gt;
+    &lt;h1 class=&quot;pen-title&quot;&gt;Basic Hero with Overlay&lt;/h1&gt;
+    &lt;p class=&quot;pen-description&quot;&gt;A basic hero image with an overlay for ease of reading with a title, some text, and a button.&lt;/p&gt;
+    &lt;!-- Begin Your Code --&gt;
+    &lt;section class=&quot;hero image-as-background&quot; style=&quot;background-image: url(&#39;http://www.placecage.com/1600/450&#39;);&quot;&gt;
+        &lt;div class=&quot;hero-container&quot;&gt;
+            &lt;header&gt;
+                &lt;h1 class=&quot;hero-title&quot;&gt;This is a large hero section&lt;/h1&gt;
+            &lt;/header&gt;
+            &lt;div class=&quot;hero-content&quot;&gt;
+                &lt;p&gt;This is the text that describes the hero section. There is a blue button below me!&lt;/p&gt;
+                &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;&lt;span class=&quot;button-text&quot;&gt;Read More&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+            &lt;/div&gt;&lt;!-- .hero-content --&gt;
+        &lt;/div&gt;&lt;!-- .hero-container --&gt;
+    &lt;/section&gt;&lt;!-- .hero --&gt;
+    &lt;section class=&quot;hero image-as-background&quot; style=&quot;background-image: url(&#39;http://www.placecage.com/1600/450&#39;);&quot;&gt;
+        &lt;div class=&quot;hero-container&quot;&gt;
+            &lt;header&gt;
+                &lt;h1 class=&quot;hero-title&quot;&gt;This is a large hero section&lt;/h1&gt;
+            &lt;/header&gt;
+            &lt;div class=&quot;hero-content&quot;&gt;
+                &lt;p&gt;This is the text that describes the hero section. There is a transparent button below me!&lt;/p&gt;
+                &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;&lt;span class=&quot;button-text&quot;&gt;Read More&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+            &lt;/div&gt;&lt;!-- .hero-content --&gt;
+        &lt;/div&gt;&lt;!-- .hero-container --&gt;
+    &lt;/section&gt;&lt;!-- .hero --&gt;
+&lt;/div&gt;&lt;!-- .wrap --&gt;</code></pre>
+                <p>{{/markdown}}
+                  </td>
+                </p>
+                <pre><code>            &lt;td class=&quot;snippet&quot;&gt;
+                &lt;div class=&quot;copy-source-container&quot;&gt;
+                    &lt;a href=&quot;javascript:void(0)&quot; class=&quot;copy-source&quot;&gt;Copy Scss&lt;/a&gt;
+                &lt;/div&gt;</code></pre>
+                <p>{{#markdown}}</p>
+                <pre><code class="language-scss"><span class="class">.hero</span>  {
+    <span class="attribute">background-position</span> <span class="value">: <span class="number">50</span> % <span class="number">50</span> %;</span>  <span class="comment">/* This could be 50% 50%, 0 0, or really anything.  The world is your stinky little oyster! */</span> 
+    <span class="attribute">background-repeat</span> <span class="value">: no-repeat;</span> 
+    <span class="attribute">background-size</span> <span class="value">: cover;</span> 
+    <span class="attribute">height</span> <span class="value">: auto;</span> 
+    <span class="attribute">margin-bottom</span> <span class="value">: rem(<span class="number">35</span> );</span> 
+    <span class="attribute">overflow</span> <span class="value">: hidden;</span> 
+    <span class="attribute">position</span> <span class="value">: relative;</span> 
+    <span class="attribute">width</span> <span class="value">: <span class="number">100</span> %;</span> 
+    <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> media</span> ($phone-landscape) {</span> 
+        <span class="attribute">background-position</span> <span class="value">: <span class="number">50</span> % <span class="number">0</span> ;</span> 
+        <span class="attribute">height</span> <span class="value">: rem(<span class="number">300</span> );</span> 
+    }
+    <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> media</span> ($desktop) {</span> 
+        <span class="attribute">height</span> <span class="value">: rem(<span class="number">450</span> );</span> 
+    }
+    <span class="comment">/* Add a slight overlay on our image */</span> 
+    &amp;<span class="pseudo">:after</span>  {
+        <span class="attribute">background-color</span> <span class="value">: rgba($color-indigo, .<span class="number">4</span> );</span> 
+        <span class="attribute">bottom</span> <span class="value">: <span class="number">0</span> ;</span> 
+        <span class="attribute">content</span> <span class="value">: <span class="string">''</span> ;</span> 
+        <span class="attribute">left</span> <span class="value">: -<span class="number">2000</span> %;</span> 
+        <span class="attribute">position</span> <span class="value">: absolute;</span> 
+        <span class="attribute">right</span> <span class="value">: -<span class="number">2000</span> %;</span> 
+        <span class="attribute">top</span> <span class="value">: <span class="number">0</span> ;</span> 
+        <span class="attribute">z-index</span> <span class="value">: <span class="number">1</span> ;</span> 
+    }
+}
+<span class="comment">// Style the container holding our hero contents</span> 
+<span class="class">.hero-container</span>  {
+    <span class="attribute">box-sizing</span> <span class="value">: border-box;</span> 
+    <span class="attribute">height</span> <span class="value">: auto;</span> 
+    <span class="attribute">padding</span> <span class="value">: rem(<span class="number">70</span> ) rem(<span class="number">50</span> );</span> 
+    <span class="attribute">position</span> <span class="value">: relative;</span> 
+    <span class="attribute">text-align</span> <span class="value">: center;</span> 
+    <span class="attribute">z-index</span> <span class="value">: <span class="number">2</span> ;</span> 
+    <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> media</span> ($phone-landscape) {</span> 
+        <span class="attribute">height</span> <span class="value">: <span class="number">100</span> %;</span> 
+    }
+    <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> media</span> ($desktop) {</span> 
+        <span class="attribute">padding</span> <span class="value">: rem(<span class="number">100</span> ) rem(<span class="number">50</span> );</span> 
+    }
+    <span class="tag">p</span>  {
+        <span class="attribute">color</span> <span class="value">: $color-white;</span> 
+        <span class="attribute">font-family</span> <span class="value">: $font-sans;</span> 
+        <span class="attribute">font-size</span> <span class="value">: <span class="number">16</span> px;</span> 
+        <span class="attribute">letter-spacing</span> <span class="value">: <span class="number">1</span> px;</span> 
+    }
+}
+<span class="class">.hero-title</span>  {
+    <span class="attribute">color</span> <span class="value">: $color-white;</span> 
+    <span class="attribute">font-family</span> <span class="value">: $font-sans;</span> 
+    <span class="attribute">font-size</span> <span class="value">: <span class="number">36</span> px;</span> 
+    <span class="attribute">font-weight</span> <span class="value">: <span class="number">700</span> ;</span> 
+    <span class="attribute">letter-spacing</span> <span class="value">: <span class="number">1</span> px;</span> 
+    <span class="attribute">margin-bottom</span> <span class="value">: <span class="number">0</span> ;</span> 
+}
+<span class="comment">// Toss some styles on that lil ole button</span> 
+<span class="class">.button</span>  {
+    <span class="attribute">background-color</span> <span class="value">: $color-indigo;</span> 
+    <span class="attribute">border-radius</span> <span class="value">: rem(<span class="number">6</span> );</span> 
+    <span class="attribute">color</span> <span class="value">: $color-white;</span> 
+    <span class="attribute">display</span> <span class="value">: inline-block;</span> 
+    <span class="attribute">height</span> <span class="value">: rem(<span class="number">44</span> );</span> 
+    <span class="attribute">padding</span> <span class="value">: <span class="number">0</span>  rem(<span class="number">44</span> );</span> 
+    <span class="attribute">text-decoration</span> <span class="value">: none;</span> 
+    <span class="attribute">text-transform</span> <span class="value">: uppercase;</span> 
+    <span class="attribute">transition</span> <span class="value">: all <span class="number">0.2</span> s ease;</span> 
+    &amp;<span class="pseudo">:hover</span>  {
+        <span class="attribute">background-color</span> <span class="value">: darken($color-indigo, <span class="number">5</span> %);</span> 
+        <span class="attribute">text-decoration</span> <span class="value">: none;</span> 
+    }
+}
+<span class="comment">// Styles for a "ghost" button - a button with no background color, but with a thin border</span> 
+<span class="class">.ghost</span>  {
+    <span class="attribute">background-color</span> <span class="value">: transparent;</span> 
+    <span class="attribute">border</span> <span class="value">: <span class="number">1</span> px solid $color-white;</span> 
+    &amp;<span class="pseudo">:hover</span>  {
+        <span class="attribute">background-color</span> <span class="value">: $color-white;</span> 
+        <span class="attribute">border-color</span> <span class="value">: transparent;</span> 
+        <span class="attribute">color</span> <span class="value">: $color-indigo;</span> 
+    }
+}
+<span class="comment">// Vertically center the text within our button link</span> 
+<span class="class">.button-text</span>  {
+    <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> vertical-align</span> (middle);</span> 
+    <span class="attribute">display</span> <span class="value">: block;</span> 
+    <span class="attribute">font-weight</span> <span class="value">: <span class="number">600</span> ;</span> 
+}</code></pre>
+                <p>{{/markdown}}
+                  </td>
+                  </tr>
+                  </tbody>
+                  </table>
+              </div>
+
+              <!-- .pattern-snippet -->
+              </p>
+            </div>
+            <a name="accordion-tabs"></a> 
+            <div class="markdown__body">
+              <p>
+                <scr{{!}}ipt src="{{assets}}/js/accordion-tabs.js"></scr{{!}}ipt>
+              </p>
+              <div class="pattern-wrapper">
+                <h2>Accordion / Tabs</h2>
+                <ul class="accordion-tabs">
+                  <li class="tab-header-and-content">
+                    <a href="javascript:void(0)" class="is-active tab-link">Tab Item</a> 
+                    <div class="tab-content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt pellentesque lorem, id suscipit dolor rutrum id. Morbi facilisis porta volutpat. Fusce adipiscing, mauris quis congue tincidunt, sapien purus suscipit odio,
+                        quis dictum odio tortor in sem. Ut sit amet libero nec orci mattis fringilla. Praesent eu ipsum in sapien tincidunt molestie sed ut magna. Nam accumsan dui at orci rhoncus pharetra tincidunt elit ullamcorper. Sed ac mauris ipsum.
+                        Nullam imperdiet sapien id purus pretium id aliquam mi ullamcorper.</p>
+                    </div>
+                  </li>
+                  <li class="tab-header-and-content">
+                    <a href="javascript:void(0)" class="tab-link">Another Tab</a> 
+                    <div class="tab-content">
+                      <p>Ut laoreet augue et neque pretium non sagittis nibh pulvinar. Etiam ornare tincidunt orci quis ultrices. Pellentesque ac sapien ac purus gravida ullamcorper. Duis rhoncus sodales lacus, vitae adipiscing tellus pharetra sed. Praesent
+                        bibendum lacus quis metus condimentum ac accumsan orci vulputate. Aenean fringilla massa vitae metus facilisis congue. Morbi placerat eros ac sapien semper pulvinar. Vestibulum facilisis, ligula a molestie venenatis, metus justo
+                        ullamcorper ipsum, congue aliquet dolor tortor eu neque. Sed imperdiet, nibh ut vestibulum tempor, nibh dui volutpat lacus, vel gravida magna justo sit amet quam. Quisque tincidunt ligula at nisl imperdiet sagittis. Morbi rutrum
+                        tempor arcu, non ultrices sem semper a. Aliquam quis sem mi.</p>
+                    </div>
+                  </li>
+                  <li class="tab-header-and-content">
+                    <a href="javascript:void(0)" class="tab-link">Third</a> 
+                    <div class="tab-content">
+                      <p>Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra vel vestibulum in, porttitor ut sapien. Phasellus tempor lorem id justo ornare tincidunt. Nulla faucibus, purus eu placerat fermentum,
+                        velit mi iaculis nunc, bibendum tincidunt ipsum justo eu mauris. Nulla facilisi. Vestibulum vel lectus ac purus tempus suscipit nec sit amet eros. Nullam fringilla, enim eu lobortis dapibus, quam magna tincidunt nibh, sit amet
+                        imperdiet dolor justo congue turpis.</p>
+                      <br> </div>
+                  </li>
+                  <li class="tab-header-and-content">
+                    <a href="javascript:void(0)" class="tab-link">Last Item</a> 
+                    <div class="tab-content">
+                      <p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus dui urna.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- .pattern-wrapper -->
+              <div class="pattern-snippet">
+                <div class="pattern-control">
+                  <a href="#" class="js-show-code">Show Code</a> 
+                  <a href="#" class="js-hide-code">Hide Code</a> 
+                </div>
+                <pre><code>&lt;table class=&quot;snippets-table&quot;&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;snippet&quot;&gt;
+                &lt;div class=&quot;copy-source-container&quot;&gt;
+                    &lt;a href=&quot;javascript:void(0)&quot; class=&quot;copy-source&quot;&gt;Copy HTML&lt;/a&gt;
+                &lt;/div&gt;&lt;!-- .copy-source-container --&gt;</code></pre>
+                <p>{{#markdown}}</p>
+                <pre><code class="language-html">&lt;ul class=&quot;accordion-tabs&quot;&gt;
+  &lt;li class=&quot;tab-header-and-content&quot;&gt;
+    &lt;a href=&quot;javascript:void(0)&quot; class=&quot;is-active tab-link&quot;&gt;Tab Item&lt;/a&gt;
+    &lt;div class=&quot;tab-content&quot;&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt pellentesque lorem, id suscipit dolor rutrum id. Morbi facilisis porta volutpat. Fusce adipiscing, mauris quis congue tincidunt, sapien purus suscipit odio, quis dictum odio tortor in sem. Ut sit amet libero nec orci mattis fringilla. Praesent eu ipsum in sapien tincidunt molestie sed ut magna. Nam accumsan dui at orci rhoncus pharetra tincidunt elit ullamcorper. Sed ac mauris ipsum. Nullam imperdiet sapien id purus pretium id aliquam mi ullamcorper.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;tab-header-and-content&quot;&gt;
+    &lt;a href=&quot;javascript:void(0)&quot; class=&quot;tab-link&quot;&gt;Another Tab&lt;/a&gt;
+    &lt;div class=&quot;tab-content&quot;&gt;
+      &lt;p&gt;Ut laoreet augue et neque pretium non sagittis nibh pulvinar. Etiam ornare tincidunt orci quis ultrices. Pellentesque ac sapien ac purus gravida ullamcorper. Duis rhoncus sodales lacus, vitae adipiscing tellus pharetra sed. Praesent bibendum lacus quis metus condimentum ac accumsan orci vulputate. Aenean fringilla massa vitae metus facilisis congue. Morbi placerat eros ac sapien semper pulvinar. Vestibulum facilisis, ligula a molestie venenatis, metus justo ullamcorper ipsum, congue aliquet dolor tortor eu neque. Sed imperdiet, nibh ut vestibulum tempor, nibh dui volutpat lacus, vel gravida magna justo sit amet quam. Quisque tincidunt ligula at nisl imperdiet sagittis. Morbi rutrum tempor arcu, non ultrices sem semper a. Aliquam quis sem mi.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;tab-header-and-content&quot;&gt;
+    &lt;a href=&quot;javascript:void(0)&quot; class=&quot;tab-link&quot;&gt;Third&lt;/a&gt;
+    &lt;div class=&quot;tab-content&quot;&gt;
+      &lt;p&gt;Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra vel vestibulum in, porttitor ut sapien. Phasellus tempor lorem id justo ornare tincidunt. Nulla faucibus, purus eu placerat fermentum, velit mi iaculis nunc, bibendum tincidunt ipsum justo eu mauris. Nulla facilisi. Vestibulum vel lectus ac purus tempus suscipit nec sit amet eros. Nullam fringilla, enim eu lobortis dapibus, quam magna tincidunt nibh, sit amet imperdiet dolor justo congue turpis.&lt;/p&gt;    
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;tab-header-and-content&quot;&gt;
+    &lt;a href=&quot;javascript:void(0)&quot; class=&quot;tab-link&quot;&gt;Last Item&lt;/a&gt;
+    &lt;div class=&quot;tab-content&quot;&gt;
+      &lt;p&gt;Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus dui urna.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <p>{{/markdown}}
+                  </td>
+                </p>
+                <pre><code>            &lt;td class=&quot;snippet&quot;&gt;
+                &lt;div class=&quot;copy-source-container&quot;&gt;
+                    &lt;a href=&quot;javascript:void(0)&quot; class=&quot;copy-source&quot;&gt;Copy Scss&lt;/a&gt;
+                &lt;/div&gt;</code></pre>
+                <p>{{#markdown}}</p>
+                <pre><code class="language-scss"><span class="class">.accordion-tabs</span>  {
+  $<span class="tag">base</span> -<span class="attribute">border-color</span> <span class="value">: <span class="hexcolor">#dcdcdc</span>  !default;</span> 
+  $<span class="tag">base</span> -<span class="attribute">border-radius</span> <span class="value">: <span class="number">3</span> px !default;</span> 
+  $<span class="tag">base</span> -<span class="attribute">background-color</span> <span class="value">: <span class="hexcolor">#fff</span>  !default;</span> 
+  $<span class="tag">base</span> -spacing<span class="value">: <span class="number">1.5</span> em !default;</span> 
+  $action-<span class="attribute">color</span> <span class="value">: <span class="hexcolor">#477dca</span>  !default;</span> 
+  $dark-gray<span class="value">: <span class="hexcolor">#333</span>  !default;</span> 
+  $light-gray<span class="value">: <span class="hexcolor">#ddd</span>  !default;</span> 
+  $<span class="value">medium</span> -screen<span class="value">: em(<span class="number">640</span> ) !default;</span> 
+  $tab-<span class="attribute">border</span> <span class="value">: <span class="number">1</span> px solid $base-border-color;</span> 
+  $tab-<span class="attribute">content</span> -<span class="attribute">background</span> <span class="value">: lighten($light-gray, <span class="number">10</span> );</span> 
+  $tab-active-<span class="attribute">background</span> <span class="value">: $tab-content-background;</span> 
+  $tab-<span class="value">inactive</span> -<span class="attribute">color</span> <span class="value">: $base-background-color;</span> 
+  $tab-<span class="value">inactive</span> -hover-<span class="attribute">color</span> <span class="value">: darken($light-gray, <span class="number">5</span> );</span> 
+  $tab-mode<span class="value">: $medium-screen;</span> 
+  <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> clearfix</span> ;</span> 
+  <span class="attribute">line-height</span> <span class="value">: <span class="number">1.5</span> ;</span> 
+  <span class="attribute">margin-bottom</span> <span class="value">: $base-spacing;</span> 
+  <span class="attribute">padding</span> <span class="value">: <span class="number">0</span> ;</span> 
+  <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> media</span> (max-width $tab-mode) {</span> 
+    <span class="attribute">border</span> <span class="value">: $tab-border;</span> 
+    <span class="attribute">border-radius</span> <span class="value">: $base-border-radius;</span> 
+  }
+  <span class="class">.tab-header-and-content</span>  {
+    <span class="attribute">list-style</span> <span class="value">: none;</span> 
+    <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> media</span> ($tab-mode) {</span> 
+      <span class="attribute">display</span> <span class="value">: inline;</span> 
+    }
+    &amp;<span class="pseudo">:first-child</span>  <span class="class">.tab-link</span>  {
+      <span class="attribute">border-top-left-radius</span> <span class="value">: $base-border-radius;</span> 
+      <span class="attribute">border-top-right-radius</span> <span class="value">: $base-border-radius;</span> 
+      <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> media</span> (max-width $tab-mode) {</span> 
+        <span class="attribute">border-top</span> <span class="value">: <span class="number">0</span> ;</span> 
+      }
+    }
+    &amp;<span class="pseudo">:last-child</span>  <span class="class">.tab-link</span>  {
+      <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> media</span> (max-width $tab-mode) {</span> 
+        <span class="attribute">border-bottom-left-radius</span> <span class="value">: $base-border-radius;</span> 
+        <span class="attribute">border-bottom-right-radius</span> <span class="value">: $base-border-radius;</span> 
+      }
+    }
+  }
+  <span class="class">.tab-link</span>  {
+    <span class="attribute">background-color</span> <span class="value">: $tab-inactive-color;</span> 
+    <span class="attribute">border-top</span> <span class="value">: $tab-border;</span> 
+    <span class="attribute">color</span> <span class="value">: $dark-gray;</span> 
+    <span class="attribute">display</span> <span class="value">: block;</span> 
+    <span class="attribute">font-weight</span> <span class="value">: bold;</span> 
+    <span class="attribute">padding</span> <span class="value">: ($base-spacing / <span class="number">2</span> ) ($gutter / <span class="number">2</span> );</span> 
+    <span class="attribute">text-decoration</span> <span class="value">: none;</span> 
+    <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> media</span> ($tab-mode) {</span> 
+      <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> inline-block</span> ;</span> 
+      <span class="attribute">border-top</span> <span class="value">: <span class="number">0</span> ;</span> 
+      <span class="attribute">border-top-left-radius</span> <span class="value">: $base-border-radius;</span> 
+      <span class="attribute">border-top-right-radius</span> <span class="value">: $base-border-radius;</span> 
+    }
+    &amp;<span class="pseudo">:hover</span>  {
+      <span class="attribute">color</span> <span class="value">: $action-color;</span> 
+    }
+    &amp;<span class="pseudo">:focus</span>  {
+      <span class="attribute">outline</span> <span class="value">: none;</span> 
+    }
+    &amp;<span class="class">.is-active</span>  {
+      <span class="attribute">background-color</span> <span class="value">: $tab-active-background;</span> 
+      <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> media</span> ($tab-mode) {</span> 
+        <span class="attribute">background-color</span> <span class="value">: $tab-active-background;</span> 
+        <span class="attribute">border</span> <span class="value">: $tab-border;</span> 
+        <span class="attribute">border-bottom-color</span> <span class="value">: $tab-active-background;</span> 
+        <span class="attribute">margin-bottom</span> <span class="value">: -<span class="number">1</span> px;</span> 
+      }
+    }
+  }
+  <span class="class">.tab-content</span>  {
+    <span class="attribute">background</span> <span class="value">: $tab-content-background;</span> 
+    <span class="attribute">display</span> <span class="value">: none;</span> 
+    <span class="attribute">padding</span> <span class="value">: $base-spacing $gutter;</span> 
+    <span class="attribute">width</span> <span class="value">: <span class="number">100</span> %;</span> 
+    <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> media</span> ($tab-mode) {</span> 
+      <span class="attribute">border</span> <span class="value">: $tab-border;</span> 
+      <span class="attribute">border-bottom-left-radius</span> <span class="value">: $base-border-radius;</span> 
+      <span class="attribute">border-bottom-right-radius</span> <span class="value">: $base-border-radius;</span> 
+      <span class="attribute">border-top-right-radius</span> <span class="value">: $base-border-radius;</span> 
+      <span class="attribute">float</span> <span class="value">: left;</span> 
+    }
+  }
+}</code></pre>
+                <p>{{/markdown}}
+                  </td>
+                </p>
+                <pre><code>            &lt;td class=&quot;snippet&quot;&gt;
+                &lt;div class=&quot;copy-source-container&quot;&gt;
+                    &lt;a href=&quot;javascript:void(0)&quot; class=&quot;copy-source&quot;&gt;Copy Javascript&lt;/a&gt;
+                &lt;/div&gt;</code></pre>
+                <p>{{#markdown}}</p>
+                <pre><code class="language-javascript">$(document).ready(<span class="function"><span class="keyword">function</span>  <span class="params">()</span>  {</span> 
+    $(<span class="string">'.accordion-tabs'</span> ).each(<span class="function"><span class="keyword">function</span> <span class="params">(index)</span>  {</span> 
+          $(<span class="keyword">this</span> ).children(<span class="string">'li'</span> ).first().children(<span class="string">'a'</span> ).addClass(<span class="string">'is-active'</span> ).next().addClass(<span class="string">'is-open'</span> ).show();
+    });
+    $(<span class="string">'.accordion-tabs'</span> ).on(<span class="string">'click'</span>, <span class="string">'li &gt; a.tab-link'</span>, <span class="function"><span class="keyword">function</span> <span class="params">(event)</span>  {</span> 
+        <span class="keyword">if</span>  (!$(<span class="keyword">this</span> ).hasClass(<span class="string">'is-active'</span> )) {
+            event.preventDefault();
+            <span class="keyword">var</span>  accordionTabs = $(<span class="keyword">this</span> ).closest(<span class="string">'.accordion-tabs'</span> );
+            accordionTabs.find(<span class="string">'.is-open'</span> ).removeClass(<span class="string">'is-open'</span> ).hide();
+            $(<span class="keyword">this</span> ).next().toggleClass(<span class="string">'is-open'</span> ).toggle();
+            accordionTabs.find(<span class="string">'.is-active'</span> ).removeClass(<span class="string">'is-active'</span> );
+            $(<span class="keyword">this</span> ).addClass(<span class="string">'is-active'</span> );
+            } <span class="keyword">else</span>  {
+                event.preventDefault();
+            }
+    });
+});</code></pre>
+                <p>{{/markdown}}
+                  </td>
+                  </tr>
+                  </tbody>
+                  </table>
+              </div>
+
+              <!-- .pattern-snippet -->
+              </p>
+            </div>
+            <a name="cards"></a> 
+            <div class="markdown__body">
+              <h1 id="cards">Cards</h1>
+              <p>TODO: Brief description / documentation</p>
+              <h2 id="example">Example</h2>
+              <div class="cards">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+                  </div>
+                  <div class="card-header">
+                    First Card
+                  </div>
+                  <div class="card-copy">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-image">
+                    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-4.png" alt="">
+                  </div>
+                  <div class="card-header">
+                    Another Card
+                  </div>
+                  <div class="card-copy">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-image">
+                    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-3.png" alt="">
+                  </div>
+                  <div class="card-header">
+                    The Last Card
+                  </div>
+                  <div class="card-copy">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                </div>
+              </div>
+              <h3 id="code">Code</h3>
+              <pre><code class="language-html">&lt;div class=&quot;cards&quot;&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-image&quot;&gt;
+      &lt;img src=&quot;https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png&quot; alt=&quot;&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-header&quot;&gt;
+      First Card
+    &lt;/div&gt;
+    &lt;div class=&quot;card-copy&quot;&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-image&quot;&gt;
+      &lt;img src=&quot;https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-4.png&quot; alt=&quot;&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-header&quot;&gt;
+      Another Card
+    &lt;/div&gt;
+    &lt;div class=&quot;card-copy&quot;&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-image&quot;&gt;
+      &lt;img src=&quot;https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-3.png&quot; alt=&quot;&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-header&quot;&gt;
+      The Last Card
+    &lt;/div&gt;
+    &lt;div class=&quot;card-copy&quot;&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+            <a name="icon-bullet-points"></a> 
+            <div class="markdown__body">
+              <div class="pattern-wrapper">
+                <h2 class="pattern-title">Icon Bullet</h2>
+                <p class="pattern-description">TODO: add description</p>
+                <div class="wrap">
+                  <h1 class="pen-title">Icon Bullet Points</h1>
+                  <p class="pen-description">List items that feature an icon.</p>
+                  <ul class="bullets">
+                    <li class="bullet">
+                      <div class="bullet-icon bullet-icon-1">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/476573/comment.svg" alt="Bullet 1">
+                      </div>
+                      <div class="bullet-content">
+                        <h2>This Bullet Title</h2>
+                        <p>Lorem dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+                      </div>
+                    </li>
+                    <li class="bullet">
+                      <div class="bullet-icon bullet-icon-2">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/476573/power-off.svg" alt="Bullet 2">
+                      </div>
+                      <div class="bullet-content">
+                        <h2>Another Bullet Title</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum.</p>
+                      </div>
+                    </li>
+                    <li class="bullet">
+                      <div class="bullet-icon bullet-icon-3">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/476573/home.svg" alt="Bullet 3">
+                      </div>
+                      <div class="bullet-content">
+                        <h2>Last Bullet Title</h2>
+                        <p>Lorem ipsum sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+                      </div>
+                    </li>
+                    <li class="bullet">
+                      <div class="bullet-icon bullet-icon-4">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/476573/user.svg" alt="Bullet 4">
+                      </div>
+                      <div class="bullet-content">
+                        <h2>This Bullet Title</h2>
+                        <p>Lorem dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+                      </div>
+                    </li>
+                    <li class="bullet">
+                      <div class="bullet-icon bullet-icon-5">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/476573/road.svg" alt="Bullet 5">
+                      </div>
+                      <div class="bullet-content">
+                        <h2>Another Bullet Title</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum.</p>
+                      </div>
+                    </li>
+                    <li class="bullet">
+                      <div class="bullet-icon bullet-icon-6">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/476573/refresh.svg" alt="Bullet 6">
+                      </div>
+                      <div class="bullet-content">
+                        <h2>Last Bullet Title</h2>
+                        <p>Lorem ipsum sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+                      </div>
+                    </li>
+                    <li class="bullet">
+                      <div class="bullet-icon bullet-icon-7">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/476573/fire.svg" alt="Bullet 7">
+                      </div>
+                      <div class="bullet-content">
+                        <h2>Last Bullet Title</h2>
+                        <p>Lorem ipsum sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+                      </div>
+                    </li>
+                    <li class="bullet">
+                      <div class="bullet-icon bullet-icon-8">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/476573/camera.svg" alt="Bullet 8">
+                      </div>
+                      <div class="bullet-content">
+                        <h2>Last Bullet Title</h2>
+                        <p>Lorem ipsum sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- .wrap -->
+              </div>
+
+              <!-- .pattern-wrapper -->
+              <div class="pattern-snippet">
+                <div class="pattern-control">
+                  <a href="#" class="js-show-code">Show Code</a> 
+                  <a href="#" class="js-hide-code">Hide Code</a> 
+                </div>
+                <pre><code>&lt;table class=&quot;snippets-table&quot;&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;snippet&quot;&gt;
+                &lt;div class=&quot;copy-source-container&quot;&gt;
+                    &lt;a href=&quot;javascript:void(0)&quot; class=&quot;copy-source&quot;&gt;Copy HTML&lt;/a&gt;
+                &lt;/div&gt;&lt;!-- .copy-source-container --&gt;</code></pre>
+                <pre><code class="language-html">&lt;div class=&quot;wrap&quot;&gt;
+    &lt;h1 class=&quot;pen-title&quot;&gt;Icon Bullet Points&lt;/h1&gt;
+    &lt;p class=&quot;pen-description&quot;&gt;List items that feature an icon.&lt;/p&gt;
+    &lt;ul class=&quot;bullets&quot;&gt;
+        &lt;li class=&quot;bullet&quot;&gt;
+            &lt;div class=&quot;bullet-icon bullet-icon-1&quot;&gt;
+                &lt;img src=&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/476573/comment.svg&quot; alt=&quot;Bullet 1&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;bullet-content&quot;&gt;
+                &lt;h2&gt;This Bullet Title&lt;/h2&gt;
+                &lt;p&gt;Lorem dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;bullet&quot;&gt;
+            &lt;div class=&quot;bullet-icon bullet-icon-2&quot;&gt;
+                &lt;img src=&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/476573/power-off.svg&quot; alt=&quot;Bullet 2&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;bullet-content&quot;&gt;
+                &lt;h2&gt;Another Bullet Title&lt;/h2&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;bullet&quot;&gt;
+            &lt;div class=&quot;bullet-icon bullet-icon-3&quot;&gt;
+                &lt;img src=&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/476573/home.svg&quot; alt=&quot;Bullet 3&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;bullet-content&quot;&gt;
+                &lt;h2&gt;Last Bullet Title&lt;/h2&gt;
+                &lt;p&gt;Lorem ipsum sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;bullet&quot;&gt;
+            &lt;div class=&quot;bullet-icon bullet-icon-4&quot;&gt;
+                &lt;img src=&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/476573/user.svg&quot; alt=&quot;Bullet 4&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;bullet-content&quot;&gt;
+                &lt;h2&gt;This Bullet Title&lt;/h2&gt;
+                &lt;p&gt;Lorem dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;bullet&quot;&gt;
+            &lt;div class=&quot;bullet-icon bullet-icon-5&quot;&gt;
+                &lt;img src=&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/476573/road.svg&quot; alt=&quot;Bullet 5&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;bullet-content&quot;&gt;
+                &lt;h2&gt;Another Bullet Title&lt;/h2&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;bullet&quot;&gt;
+            &lt;div class=&quot;bullet-icon bullet-icon-6&quot;&gt;
+                &lt;img src=&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/476573/refresh.svg&quot; alt=&quot;Bullet 6&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;bullet-content&quot;&gt;
+                &lt;h2&gt;Last Bullet Title&lt;/h2&gt;
+                &lt;p&gt;Lorem ipsum sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;bullet&quot;&gt;
+            &lt;div class=&quot;bullet-icon bullet-icon-7&quot;&gt;
+                &lt;img src=&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/476573/fire.svg&quot; alt=&quot;Bullet 7&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;bullet-content&quot;&gt;
+                &lt;h2&gt;Last Bullet Title&lt;/h2&gt;
+                &lt;p&gt;Lorem ipsum sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;bullet&quot;&gt;
+            &lt;div class=&quot;bullet-icon bullet-icon-8&quot;&gt;
+                &lt;img src=&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/476573/camera.svg&quot; alt=&quot;Bullet 8&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;bullet-content&quot;&gt;
+                &lt;h2&gt;Last Bullet Title&lt;/h2&gt;
+                &lt;p&gt;Lorem ipsum sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+                <pre><code>            &lt;/td&gt;
+            &lt;td class=&quot;snippet&quot;&gt;
+                &lt;div class=&quot;copy-source-container&quot;&gt;
+                    &lt;a href=&quot;javascript:void(0)&quot; class=&quot;copy-source&quot;&gt;Copy Scss&lt;/a&gt;
+                &lt;/div&gt;</code></pre>
+                <pre><code class="language-css">// Icons bullet images are currently Font Awesome SVG icons
+.bullets {
+    $bullet-icon-color: $color-indigo;
+    $bullet-font-color: $color-mineshaft;
+    $bullet-icon-size: rem(56);
+    @include display(flex);
+    @include flex-wrap(wrap);
+    margin: rem(16);
+    overflow: auto;
+    padding: 0;
+    .bullet {
+        @include flex-basis(rem(320));
+        @include flex-grow(1);
+    }
+    // Base icon styles
+    .bullet-icon {
+        background: $bullet-icon-color;
+        border-radius: 50%;
+        float: left;
+        height: $bullet-icon-size;
+        padding: $bullet-icon-size / 4;
+        width: $bullet-icon-size;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    // Individual bullets
+    .bullet-icon-1 {
+        background: $bullet-icon-color;
+    }
+    .bullet-icon-2 {
+        background: adjust-hue($bullet-icon-color, -50%);
+    }
+    .bullet-icon-3 {
+        background: adjust-hue($bullet-icon-color, -160%);
+    }
+    .bullet-icon-4 {
+        background: adjust-hue($bullet-icon-color, -180%);
+    }
+    .bullet-icon-5 {
+        background: adjust-hue($bullet-icon-color, -200%);
+    }
+    .bullet-icon-6 {
+        background: adjust-hue($bullet-icon-color, -20%);
+    }
+    .bullet-icon-7 {
+        background: adjust-hue($bullet-icon-color, -240%);
+    }
+    .bullet-icon-8 {
+        background: adjust-hue($bullet-icon-color, -300%);
+    }
+    .bullet-content {
+        margin-left: $bullet-icon-size * 1.4;
+        margin-bottom: rem(32);
+    }
+    // Bullet title
+    h2 {
+        border-bottom: 1px solid transparentize($bullet-font-color, 0.8);
+        color: $color-white;
+        display: inline-block;
+        font-size: $bullet-icon-size / 2.5;
+        margin: 0 0 ($bullet-icon-size / 6) 0;
+        padding-top: $bullet-icon-size / 7;
+    }
+    // Remove list styles
+    li {
+        list-style: none;
+    }
+    // Bullet text
+    p {
+        color: $color-gray;
+    }
+    img {
+        max-width: 100%;
+    }
+}</code></pre>
+                <pre><code>            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+                <p>
+              </div>
+
+              <!-- .pattern-snippet -->
+              </p>
+            </div>
+            <a name="nav"></a> 
+            <div class="markdown__body">
+              <h2 id="navigation">Navigation</h2>
+              <p>TODO: Describe what navigation is and how it is used in the application.</p>
+              <h3 id="examples">Examples</h3>
+              <nav>Default</nav>
+              <h3 id="code">Code</h3>
+              <pre><code class="language-html">&lt;nav&gt;Default&lt;/nav&gt;</code></pre>
+            </div>
+            <a name="vertical-tabs"></a> 
+            <div class="markdown__body">
+              <p>
+                <scr{{!}}ipt src="{{assets}}/js/vertical-tabs.js"></scr{{!}}ipt>
+              </p>
+              <h2 id="vertical-tabs">Vertical Tabs</h2>
+              <p>TODO: Describe what vertical tabs is and how it is used in the application.</p>
+              <h3 id="examples">Examples</h3>
+              <div class="vertical-tabs-container">
+                <div class="vertical-tabs">
+                  <a href="javascript:void(0)" class="js-vertical-tab vertical-tab is-active" rel="tab1">Item 1</a> 
+                  <a href="javascript:void(0)" class="js-vertical-tab vertical-tab" rel="tab2">Item 2</a> 
+                  <a href="javascript:void(0)" class="js-vertical-tab vertical-tab" rel="tab3">Item 3</a> 
+                  <a href="javascript:void(0)" class="js-vertical-tab vertical-tab" rel="tab4">Item 4</a> 
+                </div>
+                <div class="vertical-tab-content-container">
+                  <a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading is-active" rel="tab1">Item 1</a> 
+                  <div id="tab1" class="js-vertical-tab-content vertical-tab-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt pellentesque lorem, id suscipit dolor rutrum id. Morbi facilisis porta volutpat. Fusce adipiscing, mauris quis congue tincidunt, sapien purus suscipit odio, quis
+                      dictum odio tortor in sem. Ut sit amet libero nec orci mattis fringilla. Praesent eu ipsum in sapien tincidunt molestie sed ut magna. Nam accumsan dui at orci rhoncus pharetra tincidunt elit ullamcorper. Sed ac mauris ipsum. Nullam
+                      imperdiet sapien id purus pretium id aliquam mi ullamcorper.</p>
+                  </div>
+                  <pre><code>&lt;a href=&quot;&quot; class=&quot;js-vertical-tab-accordion-heading vertical-tab-accordion-heading&quot; rel=&quot;tab2&quot;&gt;Item 2&lt;/a&gt;
+&lt;div id=&quot;tab2&quot; class=&quot;js-vertical-tab-content vertical-tab-content&quot;&gt;
+  &lt;p&gt;Ut laoreet augue et neque pretium non sagittis nibh pulvinar. Etiam ornare tincidunt orci quis ultrices. Pellentesque ac sapien ac purus gravida ullamcorper. Duis rhoncus sodales lacus, vitae adipiscing tellus pharetra sed. Praesent bibendum.&lt;/p&gt;
+&lt;/div&gt;
+&lt;a href=&quot;&quot; class=&quot;js-vertical-tab-accordion-heading vertical-tab-accordion-heading&quot; rel=&quot;tab3&quot;&gt;Item 3&lt;/a&gt;
+&lt;div id=&quot;tab3&quot; class=&quot;js-vertical-tab-content vertical-tab-content&quot;&gt;
+  &lt;p&gt;Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra vel vestibulum in, porttitor ut sapien. Phasellus tempor lorem id justo ornare tincidunt. Nulla faucibus, purus eu placerat fermentum, velit mi iaculis nunc, bibendum tincidunt ipsum justo eu mauris. Nulla facilisi. Vestibulum vel lectus ac purus tempus suscipit nec sit amet eros. Nullam fringilla, enim eu lobortis dapibus, quam magna tincidunt nibh, sit amet imperdiet dolor justo congue turpis.&lt;/p&gt;
+&lt;/div&gt;
+&lt;a href=&quot;&quot; class=&quot;js-vertical-tab-accordion-heading vertical-tab-accordion-heading&quot; rel=&quot;tab4&quot;&gt;Item 4&lt;/a&gt;
+&lt;div id=&quot;tab4&quot; class=&quot;js-vertical-tab-content vertical-tab-content&quot;&gt;
+  &lt;p&gt;Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus dui urna, mollis vel suscipit in, pharetra at ligula. Pellentesque a est vel est fermentum pellentesque sed sit amet dolor. Nunc in dapibus nibh. Aliquam erat volutpat. Phasellus vel dui sed nibh iaculis convallis id sit amet urna. Proin nec tellus quis justo consequat accumsan. Vivamus turpis enim, auctor eget placerat eget, aliquam ut sapien.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                  <p>
+                </div>
+              </div>
+              </p>
+              <h3 id="code">Code</h3>
+              <pre><code class="language-html">&lt;div class=&quot;vertical-tabs-container&quot;&gt;
+  &lt;div class=&quot;vertical-tabs&quot;&gt;
+    &lt;a href=&quot;javascript:void(0)&quot; class=&quot;js-vertical-tab vertical-tab is-active&quot; rel=&quot;tab1&quot;&gt;Item 1&lt;/a&gt;
+    &lt;a href=&quot;javascript:void(0)&quot; class=&quot;js-vertical-tab vertical-tab&quot; rel=&quot;tab2&quot;&gt;Item 2&lt;/a&gt;
+    &lt;a href=&quot;javascript:void(0)&quot; class=&quot;js-vertical-tab vertical-tab&quot; rel=&quot;tab3&quot;&gt;Item 3&lt;/a&gt;
+    &lt;a href=&quot;javascript:void(0)&quot; class=&quot;js-vertical-tab vertical-tab&quot; rel=&quot;tab4&quot;&gt;Item 4&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;vertical-tab-content-container&quot;&gt;
+    &lt;a href=&quot;&quot; class=&quot;js-vertical-tab-accordion-heading vertical-tab-accordion-heading is-active&quot; rel=&quot;tab1&quot;&gt;Item 1&lt;/a&gt;
+    &lt;div id=&quot;tab1&quot; class=&quot;js-vertical-tab-content vertical-tab-content&quot;&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt pellentesque lorem, id suscipit dolor rutrum id. Morbi facilisis porta volutpat. Fusce adipiscing, mauris quis congue tincidunt, sapien purus suscipit odio, quis dictum odio tortor in sem. Ut sit amet libero nec orci mattis fringilla. Praesent eu ipsum in sapien tincidunt molestie sed ut magna. Nam accumsan dui at orci rhoncus pharetra tincidunt elit ullamcorper. Sed ac mauris ipsum. Nullam imperdiet sapien id purus pretium id aliquam mi ullamcorper.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;a href=&quot;&quot; class=&quot;js-vertical-tab-accordion-heading vertical-tab-accordion-heading&quot; rel=&quot;tab2&quot;&gt;Item 2&lt;/a&gt;
+    &lt;div id=&quot;tab2&quot; class=&quot;js-vertical-tab-content vertical-tab-content&quot;&gt;
+      &lt;p&gt;Ut laoreet augue et neque pretium non sagittis nibh pulvinar. Etiam ornare tincidunt orci quis ultrices. Pellentesque ac sapien ac purus gravida ullamcorper. Duis rhoncus sodales lacus, vitae adipiscing tellus pharetra sed. Praesent bibendum.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;a href=&quot;&quot; class=&quot;js-vertical-tab-accordion-heading vertical-tab-accordion-heading&quot; rel=&quot;tab3&quot;&gt;Item 3&lt;/a&gt;
+    &lt;div id=&quot;tab3&quot; class=&quot;js-vertical-tab-content vertical-tab-content&quot;&gt;
+      &lt;p&gt;Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra vel vestibulum in, porttitor ut sapien. Phasellus tempor lorem id justo ornare tincidunt. Nulla faucibus, purus eu placerat fermentum, velit mi iaculis nunc, bibendum tincidunt ipsum justo eu mauris. Nulla facilisi. Vestibulum vel lectus ac purus tempus suscipit nec sit amet eros. Nullam fringilla, enim eu lobortis dapibus, quam magna tincidunt nibh, sit amet imperdiet dolor justo congue turpis.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;a href=&quot;&quot; class=&quot;js-vertical-tab-accordion-heading vertical-tab-accordion-heading&quot; rel=&quot;tab4&quot;&gt;Item 4&lt;/a&gt;
+    &lt;div id=&quot;tab4&quot; class=&quot;js-vertical-tab-content vertical-tab-content&quot;&gt;
+      &lt;p&gt;Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus dui urna, mollis vel suscipit in, pharetra at ligula. Pellentesque a est vel est fermentum pellentesque sed sit amet dolor. Nunc in dapibus nibh. Aliquam erat volutpat. Phasellus vel dui sed nibh iaculis convallis id sit amet urna. Proin nec tellus quis justo consequat accumsan. Vivamus turpis enim, auctor eget placerat eget, aliquam ut sapien.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- .markdown__body -->
+      </div>
+
+      <!-- #libraryContent .pp-content -->
+      <div id="menuOverlay" class="pp-open-overlay"></div>
+    </div>
+
+    <!-- #libraryContainer .pp-container -->
+    <nav class="pp-nav">
+      <h2 class="pp-nav__heading">
+        <a href="
+	    ../base/index.html
+	  ">Base</a> 
+      </h2>
+      <ul>
+        <li> <a href="../base/buttons.html">Buttons</a>  </li>
+        <li> <a href="../base/colors.html">Colors</a>  </li>
+        <li> <a href="../base/forms.html">Forms</a>  </li>
+        <li> <a href="../base/headings.html">Headings</a>  </li>
+        <li> <a href="../base/typography.html">Typography</a>  </li>
+      </ul>
+      <h2 class="pp-nav__heading">
+        <a href="
+	    index.html
+	  ">Modules</a> 
+      </h2>
+      <ul>
+        <li> <a href="accordion-tabs.html">Accordion / Tabs</a>  </li>
+        <li> <a href="hero-basic.html">Basic Hero</a>  </li>
+        <li> <a href="cards.html">Cards</a>  </li>
+        <li> <a href="icon-bullet-points.html">Icon Bullet Points</a>  </li>
+        <li> <a href="nav.html">Navigation</a>  </li>
+        <li> <a href="vertical-tabs.html">Vertical Tabs</a>  </li>
+      </ul>
+      <h2 class="pp-nav__heading">
+        <a href="
+	    ../views/index.html
+	  ">Views</a> 
+      </h2>
+      <ul>
+        <li> <a href="../views/article-template.html">Article Template</a>  </li>
+        <li> <a href="../views/home-page.html">Home Page</a>  </li>
+      </ul>
+      <h2 class="pp-nav__heading">
+        <a href="
+	    ../pattern-tests/index.html
+	  ">Pattern Tests</a> 
+      </h2>
+      <ul>
+        <li> <a href="../pattern-tests/gist-test.html">Embed Gist</a>  </li>
+      </ul>
+    </nav>
+
+    <!-- Show Code -->
+    <script>
+      $('a.js-show-code').on('click', function(e) {
+        $(this).hide();
+        $(this).siblings('.js-hide-code').css('display', 'inline-block');
+        $(this).parent().siblings('.snippets-table').show();
+        e.preventDefault();
+      })
+      $('a.js-hide-code').on('click', function(e) {
+        $(this).hide();
+        $(this).siblings('.js-show-code').css("display", "inline-block");
+        $(this).parent().siblings('.snippets-table').hide();
+        e.preventDefault();
+      });
+    </script>
+
+    <!-- Copy Code -->
+    <script>
+      $(document).ready(function() {
+        client = new ZeroClipboard($('.copy-source'), {
+          moviePath: '../assets/images/ZeroClipboard.swf'
+        })
+        client.on('dataRequested', function(client, args) {
+          var cell = $(this).parents("td.snippet");
+          var code = cell.children("pre").text();
+          client.setText(code);
+        });
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+    <script src="../assets/js/pp-navigation.js"></script>
+    <script src="../assets/js/zeroclipboard.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../assets/style.css" rel="stylesheet" />
+    <link href="../assets/github.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accordion / Tabs</title>
+  </head>
+  <body>
+    <div id="libraryContainer" class="pp-container">
+      <header class="pp-header">
+        <a href="/">
+          <img src="../assets/images/logo.svg" class="pp-header__logo">
+        </a> 
+        <div id="menuToggle" class="pp-menu-toggle">
+          <div class="pp-menu-toggle__hamburger">Menu</div>
+        </div>
+
+        <!-- #menuToggle .pp-menu-toggle -->
+      </header>
+
+      <!-- .pp-header -->
+      <div id="libraryContent" class="pp-content">
+        <div class="markdown__body">
+          <script src="../assets/js/accordion-tabs.js"></script>
+          <div class="pattern-wrapper">
+            <h2>Accordion / Tabs</h2>
+            <ul class="accordion-tabs">
+              <li class="tab-header-and-content">
+                <a href="javascript:void(0)" class="is-active tab-link">Tab Item</a> 
+                <div class="tab-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt pellentesque lorem, id suscipit dolor rutrum id. Morbi facilisis porta volutpat. Fusce adipiscing, mauris quis congue tincidunt, sapien purus suscipit odio, quis
+                    dictum odio tortor in sem. Ut sit amet libero nec orci mattis fringilla. Praesent eu ipsum in sapien tincidunt molestie sed ut magna. Nam accumsan dui at orci rhoncus pharetra tincidunt elit ullamcorper. Sed ac mauris ipsum. Nullam
+                    imperdiet sapien id purus pretium id aliquam mi ullamcorper.</p>
+                </div>
+              </li>
+              <li class="tab-header-and-content">
+                <a href="javascript:void(0)" class="tab-link">Another Tab</a> 
+                <div class="tab-content">
+                  <p>Ut laoreet augue et neque pretium non sagittis nibh pulvinar. Etiam ornare tincidunt orci quis ultrices. Pellentesque ac sapien ac purus gravida ullamcorper. Duis rhoncus sodales lacus, vitae adipiscing tellus pharetra sed. Praesent
+                    bibendum lacus quis metus condimentum ac accumsan orci vulputate. Aenean fringilla massa vitae metus facilisis congue. Morbi placerat eros ac sapien semper pulvinar. Vestibulum facilisis, ligula a molestie venenatis, metus justo ullamcorper
+                    ipsum, congue aliquet dolor tortor eu neque. Sed imperdiet, nibh ut vestibulum tempor, nibh dui volutpat lacus, vel gravida magna justo sit amet quam. Quisque tincidunt ligula at nisl imperdiet sagittis. Morbi rutrum tempor arcu, non
+                    ultrices sem semper a. Aliquam quis sem mi.</p>
+                </div>
+              </li>
+              <li class="tab-header-and-content">
+                <a href="javascript:void(0)" class="tab-link">Third</a> 
+                <div class="tab-content">
+                  <p>Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra vel vestibulum in, porttitor ut sapien. Phasellus tempor lorem id justo ornare tincidunt. Nulla faucibus, purus eu placerat fermentum, velit
+                    mi iaculis nunc, bibendum tincidunt ipsum justo eu mauris. Nulla facilisi. Vestibulum vel lectus ac purus tempus suscipit nec sit amet eros. Nullam fringilla, enim eu lobortis dapibus, quam magna tincidunt nibh, sit amet imperdiet
+                    dolor justo congue turpis.</p>
+                </div>
+              </li>
+              <li class="tab-header-and-content">
+                <a href="javascript:void(0)" class="tab-link">Last Item</a> 
+                <div class="tab-content">
+                  <p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus dui urna.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- .pattern-wrapper -->
+          <div class="pattern-snippet">
+            <div class="pattern-control">
+              <a href="#" class="js-show-code">Show Code</a> 
+              <a href="#" class="js-hide-code">Hide Code</a> 
+            </div>
+            <table class="snippets-table">
+              <tbody>
+                <tr>
+                  <td class="snippet">
+                    <div class="copy-source-container">
+                      <a href="javascript:void(0)" class="copy-source">Copy HTML</a> 
+                    </div>
+
+                    <!-- .copy-source-container -->
+                    <pre><code class="language-html">&lt;ul class=&quot;accordion-tabs&quot;&gt;
+  &lt;li class=&quot;tab-header-and-content&quot;&gt;
+    &lt;a href=&quot;javascript:void(0)&quot; class=&quot;is-active tab-link&quot;&gt;Tab Item&lt;/a&gt;
+    &lt;div class=&quot;tab-content&quot;&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt pellentesque lorem, id suscipit dolor rutrum id. Morbi facilisis porta volutpat. Fusce adipiscing, mauris quis congue tincidunt, sapien purus suscipit odio, quis dictum odio tortor in sem. Ut sit amet libero nec orci mattis fringilla. Praesent eu ipsum in sapien tincidunt molestie sed ut magna. Nam accumsan dui at orci rhoncus pharetra tincidunt elit ullamcorper. Sed ac mauris ipsum. Nullam imperdiet sapien id purus pretium id aliquam mi ullamcorper.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;tab-header-and-content&quot;&gt;
+    &lt;a href=&quot;javascript:void(0)&quot; class=&quot;tab-link&quot;&gt;Another Tab&lt;/a&gt;
+    &lt;div class=&quot;tab-content&quot;&gt;
+      &lt;p&gt;Ut laoreet augue et neque pretium non sagittis nibh pulvinar. Etiam ornare tincidunt orci quis ultrices. Pellentesque ac sapien ac purus gravida ullamcorper. Duis rhoncus sodales lacus, vitae adipiscing tellus pharetra sed. Praesent bibendum lacus quis metus condimentum ac accumsan orci vulputate. Aenean fringilla massa vitae metus facilisis congue. Morbi placerat eros ac sapien semper pulvinar. Vestibulum facilisis, ligula a molestie venenatis, metus justo ullamcorper ipsum, congue aliquet dolor tortor eu neque. Sed imperdiet, nibh ut vestibulum tempor, nibh dui volutpat lacus, vel gravida magna justo sit amet quam. Quisque tincidunt ligula at nisl imperdiet sagittis. Morbi rutrum tempor arcu, non ultrices sem semper a. Aliquam quis sem mi.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;tab-header-and-content&quot;&gt;
+    &lt;a href=&quot;javascript:void(0)&quot; class=&quot;tab-link&quot;&gt;Third&lt;/a&gt;
+    &lt;div class=&quot;tab-content&quot;&gt;
+      &lt;p&gt;Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra vel vestibulum in, porttitor ut sapien. Phasellus tempor lorem id justo ornare tincidunt. Nulla faucibus, purus eu placerat fermentum, velit mi iaculis nunc, bibendum tincidunt ipsum justo eu mauris. Nulla facilisi. Vestibulum vel lectus ac purus tempus suscipit nec sit amet eros. Nullam fringilla, enim eu lobortis dapibus, quam magna tincidunt nibh, sit amet imperdiet dolor justo congue turpis.&lt;/p&gt;    
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;tab-header-and-content&quot;&gt;
+    &lt;a href=&quot;javascript:void(0)&quot; class=&quot;tab-link&quot;&gt;Last Item&lt;/a&gt;
+    &lt;div class=&quot;tab-content&quot;&gt;
+      &lt;p&gt;Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus dui urna.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                  </td>
+                  <td class="snippet">
+                    <div class="copy-source-container">
+                      <a href="javascript:void(0)" class="copy-source">Copy Scss</a> 
+                    </div>
+                    <pre><code class="language-scss"><span class="class">.accordion-tabs</span>  {
+  $<span class="tag">base</span> -<span class="attribute">border-color</span> <span class="value">: <span class="hexcolor">#dcdcdc</span>  !default;</span> 
+  $<span class="tag">base</span> -<span class="attribute">border-radius</span> <span class="value">: <span class="number">3</span> px !default;</span> 
+  $<span class="tag">base</span> -<span class="attribute">background-color</span> <span class="value">: <span class="hexcolor">#fff</span>  !default;</span> 
+  $<span class="tag">base</span> -spacing<span class="value">: <span class="number">1.5</span> em !default;</span> 
+  $action-<span class="attribute">color</span> <span class="value">: <span class="hexcolor">#477dca</span>  !default;</span> 
+  $dark-gray<span class="value">: <span class="hexcolor">#333</span>  !default;</span> 
+  $light-gray<span class="value">: <span class="hexcolor">#ddd</span>  !default;</span> 
+  $<span class="value">medium</span> -screen<span class="value">: em(<span class="number">640</span> ) !default;</span> 
+  $tab-<span class="attribute">border</span> <span class="value">: <span class="number">1</span> px solid $base-border-color;</span> 
+  $tab-<span class="attribute">content</span> -<span class="attribute">background</span> <span class="value">: lighten($light-gray, <span class="number">10</span> );</span> 
+  $tab-active-<span class="attribute">background</span> <span class="value">: $tab-content-background;</span> 
+  $tab-<span class="value">inactive</span> -<span class="attribute">color</span> <span class="value">: $base-background-color;</span> 
+  $tab-<span class="value">inactive</span> -hover-<span class="attribute">color</span> <span class="value">: darken($light-gray, <span class="number">5</span> );</span> 
+  $tab-mode<span class="value">: $medium-screen;</span> 
+  <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> clearfix</span> ;</span> 
+  <span class="attribute">line-height</span> <span class="value">: <span class="number">1.5</span> ;</span> 
+  <span class="attribute">margin-bottom</span> <span class="value">: $base-spacing;</span> 
+  <span class="attribute">padding</span> <span class="value">: <span class="number">0</span> ;</span> 
+  <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> media</span> (max-width $tab-mode) {</span> 
+    <span class="attribute">border</span> <span class="value">: $tab-border;</span> 
+    <span class="attribute">border-radius</span> <span class="value">: $base-border-radius;</span> 
+  }
+  <span class="class">.tab-header-and-content</span>  {
+    <span class="attribute">list-style</span> <span class="value">: none;</span> 
+    <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> media</span> ($tab-mode) {</span> 
+      <span class="attribute">display</span> <span class="value">: inline;</span> 
+    }
+    &amp;<span class="pseudo">:first-child</span>  <span class="class">.tab-link</span>  {
+      <span class="attribute">border-top-left-radius</span> <span class="value">: $base-border-radius;</span> 
+      <span class="attribute">border-top-right-radius</span> <span class="value">: $base-border-radius;</span> 
+      <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> media</span> (max-width $tab-mode) {</span> 
+        <span class="attribute">border-top</span> <span class="value">: <span class="number">0</span> ;</span> 
+      }
+    }
+    &amp;<span class="pseudo">:last-child</span>  <span class="class">.tab-link</span>  {
+      <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> media</span> (max-width $tab-mode) {</span> 
+        <span class="attribute">border-bottom-left-radius</span> <span class="value">: $base-border-radius;</span> 
+        <span class="attribute">border-bottom-right-radius</span> <span class="value">: $base-border-radius;</span> 
+      }
+    }
+  }
+  <span class="class">.tab-link</span>  {
+    <span class="attribute">background-color</span> <span class="value">: $tab-inactive-color;</span> 
+    <span class="attribute">border-top</span> <span class="value">: $tab-border;</span> 
+    <span class="attribute">color</span> <span class="value">: $dark-gray;</span> 
+    <span class="attribute">display</span> <span class="value">: block;</span> 
+    <span class="attribute">font-weight</span> <span class="value">: bold;</span> 
+    <span class="attribute">padding</span> <span class="value">: ($base-spacing / <span class="number">2</span> ) ($gutter / <span class="number">2</span> );</span> 
+    <span class="attribute">text-decoration</span> <span class="value">: none;</span> 
+    <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> media</span> ($tab-mode) {</span> 
+      <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> inline-block</span> ;</span> 
+      <span class="attribute">border-top</span> <span class="value">: <span class="number">0</span> ;</span> 
+      <span class="attribute">border-top-left-radius</span> <span class="value">: $base-border-radius;</span> 
+      <span class="attribute">border-top-right-radius</span> <span class="value">: $base-border-radius;</span> 
+    }
+    &amp;<span class="pseudo">:hover</span>  {
+      <span class="attribute">color</span> <span class="value">: $action-color;</span> 
+    }
+    &amp;<span class="pseudo">:focus</span>  {
+      <span class="attribute">outline</span> <span class="value">: none;</span> 
+    }
+    &amp;<span class="class">.is-active</span>  {
+      <span class="attribute">background-color</span> <span class="value">: $tab-active-background;</span> 
+      <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> media</span> ($tab-mode) {</span> 
+        <span class="attribute">background-color</span> <span class="value">: $tab-active-background;</span> 
+        <span class="attribute">border</span> <span class="value">: $tab-border;</span> 
+        <span class="attribute">border-bottom-color</span> <span class="value">: $tab-active-background;</span> 
+        <span class="attribute">margin-bottom</span> <span class="value">: -<span class="number">1</span> px;</span> 
+      }
+    }
+  }
+  <span class="class">.tab-content</span>  {
+    <span class="attribute">background</span> <span class="value">: $tab-content-background;</span> 
+    <span class="attribute">display</span> <span class="value">: none;</span> 
+    <span class="attribute">padding</span> <span class="value">: $base-spacing $gutter;</span> 
+    <span class="attribute">width</span> <span class="value">: <span class="number">100</span> %;</span> 
+    <span class="at_rule">@<span class="keyword">include</span> <span class="preprocessor"> media</span> ($tab-mode) {</span> 
+      <span class="attribute">border</span> <span class="value">: $tab-border;</span> 
+      <span class="attribute">border-bottom-left-radius</span> <span class="value">: $base-border-radius;</span> 
+      <span class="attribute">border-bottom-right-radius</span> <span class="value">: $base-border-radius;</span> 
+      <span class="attribute">border-top-right-radius</span> <span class="value">: $base-border-radius;</span> 
+      <span class="attribute">float</span> <span class="value">: left;</span> 
+    }
+  }
+}</code></pre>
+                  </td>
+                  <td class="snippet">
+                    <div class="copy-source-container">
+                      <a href="javascript:void(0)" class="copy-source">Copy Javascript</a> 
+                    </div>
+                    <pre><code class="language-javascript">$(document).ready(<span class="function"><span class="keyword">function</span>  <span class="params">()</span>  {</span> 
+    $(<span class="string">'.accordion-tabs'</span> ).each(<span class="function"><span class="keyword">function</span> <span class="params">(index)</span>  {</span> 
+          $(<span class="keyword">this</span> ).children(<span class="string">'li'</span> ).first().children(<span class="string">'a'</span> ).addClass(<span class="string">'is-active'</span> ).next().addClass(<span class="string">'is-open'</span> ).show();
+    });
+    $(<span class="string">'.accordion-tabs'</span> ).on(<span class="string">'click'</span>, <span class="string">'li &gt; a.tab-link'</span>, <span class="function"><span class="keyword">function</span> <span class="params">(event)</span>  {</span> 
+        <span class="keyword">if</span>  (!$(<span class="keyword">this</span> ).hasClass(<span class="string">'is-active'</span> )) {
+            event.preventDefault();
+            <span class="keyword">var</span>  accordionTabs = $(<span class="keyword">this</span> ).closest(<span class="string">'.accordion-tabs'</span> );
+            accordionTabs.find(<span class="string">'.is-open'</span> ).removeClass(<span class="string">'is-open'</span> ).hide();
+            $(<span class="keyword">this</span> ).next().toggleClass(<span class="string">'is-open'</span> ).toggle();
+            accordionTabs.find(<span class="string">'.is-active'</span> ).removeClass(<span class="string">'is-active'</span> );
+            $(<span class="keyword">this</span> ).addClass(<span class="string">'is-active'</span> );
+            } <span class="keyword">else</span>  {
+                event.preventDefault();
+            }
+    });
+});</code></pre>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- .pattern-snippet -->
+        </div>
+
+        <!-- .markdown__body -->
+      </div>
+
+      <!-- #libraryContent .pp-content -->
+      <div id="menuOverlay" class="pp-open-overlay"></div>
+    </div>
+
+    <!-- #libraryContainer .pp-container -->
+    <nav class="pp-nav">
+      <h2 class="pp-nav__heading">
+        <a href="
+	    ../base/index.html
+	  ">Base</a> 
+      </h2>
+      <ul>
+        <li> <a href="../base/buttons.html">Buttons</a>  </li>
+        <li> <a href="../base/colors.html">Colors</a>  </li>
+        <li> <a href="../base/forms.html">Forms</a>  </li>
+        <li> <a href="../base/headings.html">Headings</a>  </li>
+        <li> <a href="../base/typography.html">Typography</a>  </li>
+      </ul>
+      <h2 class="pp-nav__heading">
+        <a href="
+	    index.html
+	  ">Modules</a> 
+      </h2>
+      <ul>
+        <li> <a href="accordion-tabs.html">Accordion / Tabs</a>  </li>
+        <li> <a href="hero-basic.html">Basic Hero</a>  </li>
+        <li> <a href="cards.html">Cards</a>  </li>
+        <li> <a href="icon-bullet-points.html">Icon Bullet Points</a>  </li>
+        <li> <a href="nav.html">Navigation</a>  </li>
+        <li> <a href="vertical-tabs.html">Vertical Tabs</a>  </li>
+      </ul>
+      <h2 class="pp-nav__heading">
+        <a href="
+	    ../views/index.html
+	  ">Views</a> 
+      </h2>
+      <ul>
+        <li> <a href="../views/article-template.html">Article Template</a>  </li>
+        <li> <a href="../views/home-page.html">Home Page</a>  </li>
+      </ul>
+      <h2 class="pp-nav__heading">
+        <a href="
+	    ../pattern-tests/index.html
+	  ">Pattern Tests</a> 
+      </h2>
+      <ul>
+        <li> <a href="../pattern-tests/gist-test.html">Embed Gist</a>  </li>
+      </ul>
+    </nav>
+
+    <!-- Show Code -->
+    <script>
+      $('a.js-show-code').on('click', function(e) {
+        $(this).hide();
+        $(this).siblings('.js-hide-code').css('display', 'inline-block');
+        $(this).parent().siblings('.snippets-table').show();
+        e.preventDefault();
+      })
+      $('a.js-hide-code').on('click', function(e) {
+        $(this).hide();
+        $(this).siblings('.js-show-code').css("display", "inline-block");
+        $(this).parent().siblings('.snippets-table').hide();
+        e.preventDefault();
+      });
+    </script>
+
+    <!-- Copy Code -->
+    <script>
+      $(document).ready(function() {
+        client = new ZeroClipboard($('.copy-source'), {
+          moviePath: '../assets/images/ZeroClipboard.swf'
+        })
+        client.on('dataRequested', function(client, args) {
+          var cell = $(this).parents("td.snippet");
+          var code = cell.children("pre").text();
+          client.setText(code);
+        });
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+    <script src="../assets/js/pp-navigation.js"></script>
+    <script src="../assets/js/zeroclipboard.min.js"></script>
+  </body>
+</html>

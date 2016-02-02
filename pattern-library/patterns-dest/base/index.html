@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../assets/style.css" rel="stylesheet" />
+    <link href="../assets/github.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Base</title>
+  </head>
+  <body>
+    <div id="libraryContainer" class="pp-container">
+      <header class="pp-header">
+        <a href="/">
+          <img src="../assets/images/logo.svg" class="pp-header__logo">
+        </a> 
+        <div id="menuToggle" class="pp-menu-toggle">
+          <div class="pp-menu-toggle__hamburger">Menu</div>
+        </div>
+
+        <!-- #menuToggle .pp-menu-toggle -->
+      </header>
+
+      <!-- .pp-header -->
+      <div id="libraryContent" class="pp-content">
+        <div class="markdown__body">
+          <h1>Base</h1>
+          <p>TODO: Describe what an base is</p>
+          <a name="buttons"></a> 
+          <div class="markdown__body">
+            <div class="pattern-wrapper">
+              <h2 class="pattern-title">Buttons</h2>
+              <p class="pattern-description">TODO: Describe what buttons are and how they are used in the application.</p>
+              <h3>Examples</h3>
+              <div class="library__example">
+                <button type="button" class="button--primary">Primary</button>
+                <button type="button" class="button--secondary">Secondary</button>
+                <br />
+                <br />
+                <button type="button" class="button--primary button--large">Primary Large</button>
+                <button type="button" class="button--secondary button--large">Secondary Large</button>
+                <br />
+                <br />
+                <button type="button" class="button--primary button--small">Primary Small</button>
+                <button type="button" class="button--secondary button--small">Secondary Small</button>
+              </div>
+              <p>
+            </div>
+
+            <!-- .pattern-wrapper -->
+            </p>
+            <div class="pattern-snippet">
+              <div class="pattern-control">
+                <a href="#" class="js-show-code">Show Code</a> 
+                <a href="#" class="js-hide-code">Hide Code</a> 
+              </div>
+              <pre><code>&lt;table class=&quot;snippets-table&quot;&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;snippet&quot;&gt;
+                &lt;div class=&quot;copy-source-container&quot;&gt;
+                    &lt;a href=&quot;javascript:void(0)&quot; class=&quot;copy-source&quot;&gt;Copy HTML&lt;/a&gt;
+                &lt;/div&gt;&lt;!-- .copy-source-container --&gt;</code></pre>
+              <p>{{#markdown}}</p>
+              <pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;button--primary&quot;&gt;Primary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;button--secondary&quot;&gt;Secondary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;button--primary button--large&quot;&gt;Primary Large&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;button--secondary button--large&quot;&gt;Secondary Large&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;button--primary button--small&quot;&gt;Primary Small&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;button--secondary button--small&quot;&gt;Secondary Small&lt;/button&gt;</code></pre>
+              <p>{{/markdown}}
+                </td>
+                </tr>
+                </tbody>
+                </table>
+            </div>
+
+            <!-- .pattern-snippet -->
+            </p>
+          </div>
+          <a name="forms"></a> 
+          <div class="markdown__body">
+            <h2 id="forms">Forms</h2>
+            <h3 id="examples">Examples</h3>
+            <form>
+              <fieldset>
+                <legend>Form title</legend>
+                <p>Required fields are followed by <strong><abbr title="required">&#42;</abbr></strong> .</p>
+                <div class="form-row">
+                  <label for="textInput">Test text input</label>
+                  <input id="textInput" type="text" />
+                </div>
+
+                <!-- .form-row -->
+                <div class="form-row">
+                  <label for="emailInput">Test email input</label>
+                  <input id="emailInput" type="email" />
+                </div>
+
+                <!-- .form-row -->
+                <div class="form-row">
+                  <label for="urlInput">Test url input</label>
+                  <input id="urlInput" type="url" />
+                </div>
+
+                <!-- .form-row -->
+                <div class="form-row">
+                  <label for="passwordInput">Test password input</label>
+                  <input id="passwordInput" type="password" />
+                </div>
+
+                <!-- .form-row -->
+                <div class="form-row">
+                  <label for="searchInput">Test search input</label>
+                  <input id="searchInput" type="search" />
+                </div>
+
+                <!-- .form-row -->
+                <div class="form-row">
+                  <label for="telInput">Test tel input</label>
+                  <input id="telInput" type="tel" />
+                </div>
+
+                <!-- .form-row -->
+                <div class="form-row">
+                  <label for="numberInput">Test number input</label>
+                  <input id="numberInput" type="number" />
+                </div>
+
+                <!-- .form-row -->
+                <div class="form-row">
+                  <label for="textArea">Test textarea</label>
+                  <textarea id="textArea">Write your stuff here</textarea>
+                </div>
+
+                <!-- .form-row -->
+                <div class="form-row">
+                  <label for="myFruit">Pick a fruit</label>
+                  <select id="myFruit" name="fruit">
+                    <option value="orange">Banana</option>
+                    <option>Cherry</option>
+                    <optgroup label="berries">
+                      <option>Blueberry</option>
+                      <option>Raspberry</option>
+                      <option>Strawberry</option>
+                    </optgroup>
+                  </select>
+                </div>
+
+                <!-- .form-row -->
+                <input type="submit" value="Submit">
+              </fieldset>
+            </form>
+            <h3 id="code">Code</h3>
+            <pre><code class="language-html">
+</code></pre>
+          </div>
+          <a name="headings"></a> 
+          <div class="markdown__body">
+            <h2 id="headings">Headings</h2>
+            <p>TODO: asdfa</p>
+            <h3 id="examples">Examples</h3>
+            <h1 id="heading-1">Heading 1</h1>
+            <h2 id="heading-2">Heading 2</h2>
+            <h3 id="heading-3">Heading 3</h3>
+            <h4 id="heading-4">Heading 4</h4>
+            <h5 id="heading-5">Heading 5</h5>
+            <h6 id="heading-6">Heading 6</h6>
+            <h3 id="code">Code</h3>
+            <pre><code class="language-html">
+</code></pre>
+          </div>
+          <a name="typography"></a> 
+          <div class="markdown__body">
+            <h2 id="typography">Typography</h2>
+            <p>Miscellaneous typographic styles within the app</p>
+            <h3 id="examples">Examples</h3>
+            <div class="library__example">
+              <strong>strong</strong> 
+            </div>
+            <h3 id="code">Code</h3>
+            <pre><code class="language-html">&lt;strong&gt;strong&lt;/strong&gt;</code></pre>
+          </div>
+          <a name="colors"></a> 
+          <div class="markdown__body">
+            <div class="pattern-wrapper">
+              <h2 class="pattern-title">Colors</h2>
+              <p class="pattern-description">These are Colors in the Application</p>
+              <h3>Primary palette</h3>
+              <div class="library__example">
+                <div class="library__color-swatch">
+                  <span class="library__color-swatch__preview" style="background-color: #21759b"></span> 
+                  <ul class="library__color-swatch__details">
+                    <li><strong>Blue</strong> </li>
+                    <li>#21759b</li>
+                    <li>$color-blue</li>
+                  </ul>
+                </div>
+                <pre><code>    &lt;div class=&quot;library__color-swatch&quot;&gt;
+        &lt;span class=&quot;library__color-swatch__preview&quot; style=&quot;background-color: #fff9c0&quot;&gt;&lt;/span&gt;
+        &lt;ul class=&quot;library__color-swatch__details&quot;&gt;
+            &lt;li&gt;&lt;strong&gt;Yellow&lt;/strong&gt;&lt;/li&gt;
+            &lt;li&gt;#fff9c0&lt;/li&gt;
+            &lt;li&gt;$color-yellow&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;&lt;!-- .library__example --&gt;
+&lt;h3&gt;Grayscale&lt;/h3&gt;
+&lt;div class=&quot;library__example&quot;&gt;
+    &lt;div class=&quot;library__color-swatch&quot;&gt;
+        &lt;span class=&quot;library__color-swatch__preview&quot; style=&quot;background-color: #000000&quot;&gt;&lt;/span&gt;
+        &lt;ul class=&quot;library__color-swatch__details&quot;&gt;
+            &lt;li&gt;&lt;strong&gt;Black&lt;/strong&gt;&lt;/li&gt;
+            &lt;li&gt;#000000&lt;/li&gt;
+            &lt;li&gt;$color-black&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;library__color-swatch&quot;&gt;
+        &lt;span class=&quot;library__color-swatch__preview&quot; style=&quot;background-color: #ffffff&quot;&gt;&lt;/span&gt;
+        &lt;ul class=&quot;library__color-swatch__details&quot;&gt;
+            &lt;li&gt;&lt;strong&gt;White&lt;/strong&gt;&lt;/li&gt;
+            &lt;li&gt;#ffffff&lt;/li&gt;
+            &lt;li&gt;$color-white&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;library__color-swatch&quot;&gt;
+        &lt;span class=&quot;library__color-swatch__preview&quot; style=&quot;background-color: #808080&quot;&gt;&lt;/span&gt;
+        &lt;ul class=&quot;library__color-swatch__details&quot;&gt;
+            &lt;li&gt;&lt;strong&gt;Gray&lt;/strong&gt;&lt;/li&gt;
+            &lt;li&gt;#808080&lt;/li&gt;
+            &lt;li&gt;$color-gray&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;library__color-swatch&quot;&gt;
+        &lt;span class=&quot;library__color-swatch__preview&quot; style=&quot;background-color: #111111&quot;&gt;&lt;/span&gt;
+        &lt;ul class=&quot;library__color-swatch__details&quot;&gt;
+            &lt;li&gt;&lt;strong&gt;Cod Gray&lt;/strong&gt;&lt;/li&gt;
+            &lt;li&gt;#111111&lt;/li&gt;
+            &lt;li&gt;$color-cod-gray&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;library__color-swatch&quot;&gt;
+        &lt;span class=&quot;library__color-swatch__preview&quot; style=&quot;background-color: #333333&quot;&gt;&lt;/span&gt;
+        &lt;ul class=&quot;library__color-swatch__details&quot;&gt;
+            &lt;li&gt;&lt;strong&gt;Mineshaft&lt;/strong&gt;&lt;/li&gt;
+            &lt;li&gt;#333333&lt;/li&gt;
+            &lt;li&gt;$color-mineshaft&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;library__color-swatch&quot;&gt;
+        &lt;span class=&quot;library__color-swatch__preview&quot; style=&quot;background-color: #666666&quot;&gt;&lt;/span&gt;
+        &lt;ul class=&quot;library__color-swatch__details&quot;&gt;
+            &lt;li&gt;&lt;strong&gt;Dove Gray&lt;/strong&gt;&lt;/li&gt;
+            &lt;li&gt;#666666&lt;/li&gt;
+            &lt;li&gt;$color-dove-gray&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;library__color-swatch&quot;&gt;
+        &lt;span class=&quot;library__color-swatch__preview&quot; style=&quot;background-color: #929292&quot;&gt;&lt;/span&gt;
+        &lt;ul class=&quot;library__color-swatch__details&quot;&gt;
+            &lt;li&gt;&lt;strong&gt;Gray alt&lt;/strong&gt;&lt;/li&gt;
+            &lt;li&gt;#929292&lt;/li&gt;
+            &lt;li&gt;$color-gray-alt&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;library__color-swatch&quot;&gt;
+        &lt;span class=&quot;library__color-swatch__preview&quot; style=&quot;background-color: #aaaaaa&quot;&gt;&lt;/span&gt;
+        &lt;ul class=&quot;library__color-swatch__details&quot;&gt;
+            &lt;li&gt;&lt;strong&gt;Silver Chalice&lt;/strong&gt;&lt;/li&gt;
+            &lt;li&gt;#aaaaaa&lt;/li&gt;
+            &lt;li&gt;$color-silver-chalice&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;library__color-swatch&quot;&gt;
+        &lt;span class=&quot;library__color-swatch__preview&quot; style=&quot;background-color: #cccccc&quot;&gt;&lt;/span&gt;
+        &lt;ul class=&quot;library__color-swatch__details&quot;&gt;
+            &lt;li&gt;&lt;strong&gt;Silver&lt;/strong&gt;&lt;/li&gt;
+            &lt;li&gt;#cccccc&lt;/li&gt;
+            &lt;li&gt;$color-silver&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;library__color-swatch&quot;&gt;
+        &lt;span class=&quot;library__color-swatch__preview&quot; style=&quot;background-color: #dddddd&quot;&gt;&lt;/span&gt;
+        &lt;ul class=&quot;library__color-swatch__details&quot;&gt;
+            &lt;li&gt;&lt;strong&gt;Alto&lt;/strong&gt;&lt;/li&gt;
+            &lt;li&gt;#dddddd&lt;/li&gt;
+            &lt;li&gt;$color-alto&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;library__color-swatch&quot;&gt;
+        &lt;span class=&quot;library__color-swatch__preview&quot; style=&quot;background-color: #eeeeee&quot;&gt;&lt;/span&gt;
+        &lt;ul class=&quot;library__color-swatch__details&quot;&gt;
+        &lt;li&gt;&lt;strong&gt;Gallery&lt;/strong&gt;&lt;/li&gt;
+            &lt;li&gt;#eeeeee&lt;/li&gt;
+            &lt;li&gt;$color-gallery&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;library__color-swatch&quot;&gt;
+        &lt;span class=&quot;library__color-swatch__preview&quot; style=&quot;background-color: #f1f1f1&quot;&gt;&lt;/span&gt;
+        &lt;ul class=&quot;library__color-swatch__details&quot;&gt;
+            &lt;li&gt;&lt;strong&gt;Whitesmoke&lt;/strong&gt;&lt;/li&gt;
+            &lt;li&gt;#f1f1f1&lt;/li&gt;
+            &lt;li&gt;$color-whitesmoke&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;&lt;!-- .library__example --&gt;
+&lt;h3&gt;Social Network branding&lt;/h3&gt;
+&lt;div class=&quot;library__example&quot;&gt;
+    &lt;div class=&quot;library__color-swatch&quot;&gt;
+        &lt;span class=&quot;library__color-swatch__preview&quot; style=&quot;background-color: #3b5998&quot;&gt;&lt;/span&gt;
+        &lt;ul class=&quot;library__color-swatch__details&quot;&gt;
+            &lt;li&gt;&lt;strong&gt;Facebook&lt;/strong&gt;&lt;/li&gt;
+            &lt;li&gt;#3b5998&lt;/li&gt;
+            &lt;li&gt;$color-facebook&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;library__color-swatch&quot;&gt;
+        &lt;span class=&quot;library__color-swatch__preview&quot; style=&quot;background-color: #dd4b39&quot;&gt;&lt;/span&gt;
+        &lt;ul class=&quot;library__color-swatch__details&quot;&gt;
+            &lt;li&gt;&lt;strong&gt;Google Plus&lt;/strong&gt;&lt;/li&gt;
+            &lt;li&gt;#dd4b39&lt;/li&gt;
+            &lt;li&gt;$color-googleplus&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;library__color-swatch&quot;&gt;
+        &lt;span class=&quot;library__color-swatch__preview&quot; style=&quot;background-color: #517fa4&quot;&gt;&lt;/span&gt;
+        &lt;ul class=&quot;library__color-swatch__details&quot;&gt;
+            &lt;li&gt;&lt;strong&gt;Instagram&lt;/strong&gt;&lt;/li&gt;
+            &lt;li&gt;#517fa4&lt;/li&gt;
+            &lt;li&gt;$color-instagram&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;library__color-swatch&quot;&gt;
+        &lt;span class=&quot;library__color-swatch__preview&quot; style=&quot;background-color: #007bb6&quot;&gt;&lt;/span&gt;
+        &lt;ul class=&quot;library__color-swatch__details&quot;&gt;
+            &lt;li&gt;&lt;strong&gt;Linkedin&lt;/strong&gt;&lt;/li&gt;
+            &lt;li&gt;#007bb6&lt;/li&gt;
+            &lt;li&gt;$color-linkedin&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;library__color-swatch&quot;&gt;
+        &lt;span class=&quot;library__color-swatch__preview&quot; style=&quot;background-color: #cb2027&quot;&gt;&lt;/span&gt;
+        &lt;ul class=&quot;library__color-swatch__details&quot;&gt;
+            &lt;li&gt;&lt;strong&gt;Pinterest&lt;/strong&gt;&lt;/li&gt;
+            &lt;li&gt;#cb2027&lt;/li&gt;
+            &lt;li&gt;$color-pinterest&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;library__color-swatch&quot;&gt;
+        &lt;span class=&quot;library__color-swatch__preview&quot; style=&quot;background-color: #ff9900&quot;&gt;&lt;/span&gt;
+        &lt;ul class=&quot;library__color-swatch__details&quot;&gt;
+            &lt;li&gt;&lt;strong&gt;RSS&lt;/strong&gt;&lt;/li&gt;
+            &lt;li&gt;#ff9900&lt;/li&gt;
+            &lt;li&gt;$color-rss&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;library__color-swatch&quot;&gt;
+        &lt;span class=&quot;library__color-swatch__preview&quot; style=&quot;background-color: #00aced&quot;&gt;&lt;/span&gt;
+        &lt;ul class=&quot;library__color-swatch__details&quot;&gt;
+            &lt;li&gt;&lt;strong&gt;Twitter&lt;/strong&gt;&lt;/li&gt;
+            &lt;li&gt;#00aced&lt;/li&gt;
+            &lt;li&gt;$color-twitter&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;library__color-swatch&quot;&gt;
+        &lt;span class=&quot;library__color-swatch__preview&quot; style=&quot;background-color: #bb0000&quot;&gt;&lt;/span&gt;
+        &lt;ul class=&quot;library__color-swatch__details&quot;&gt;
+            &lt;li&gt;&lt;strong&gt;Youtube&lt;/strong&gt;&lt;/li&gt;
+            &lt;li&gt;#bb0000&lt;/li&gt;
+            &lt;li&gt;$color-youtube&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;&lt;!-- .library__example --&gt;</code></pre>
+                <p>
+              </div>
+
+              <!-- .pattern-wrapper -->
+              </p>
+            </div>
+          </div>
+
+          <!-- .markdown__body -->
+        </div>
+
+        <!-- #libraryContent .pp-content -->
+        <div id="menuOverlay" class="pp-open-overlay"></div>
+      </div>
+
+      <!-- #libraryContainer .pp-container -->
+      <nav class="pp-nav">
+        <h2 class="pp-nav__heading">
+          <a href="
+	    index.html
+	  ">Base</a> 
+        </h2>
+        <ul>
+          <li> <a href="buttons.html">Buttons</a>  </li>
+          <li> <a href="colors.html">Colors</a>  </li>
+          <li> <a href="forms.html">Forms</a>  </li>
+          <li> <a href="headings.html">Headings</a>  </li>
+          <li> <a href="typography.html">Typography</a>  </li>
+        </ul>
+        <h2 class="pp-nav__heading">
+          <a href="
+	    ../modules/index.html
+	  ">Modules</a> 
+        </h2>
+        <ul>
+          <li> <a href="../modules/accordion-tabs.html">Accordion / Tabs</a>  </li>
+          <li> <a href="../modules/hero-basic.html">Basic Hero</a>  </li>
+          <li> <a href="../modules/cards.html">Cards</a>  </li>
+          <li> <a href="../modules/icon-bullet-points.html">Icon Bullet Points</a>  </li>
+          <li> <a href="../modules/nav.html">Navigation</a>  </li>
+          <li> <a href="../modules/vertical-tabs.html">Vertical Tabs</a>  </li>
+        </ul>
+        <h2 class="pp-nav__heading">
+          <a href="
+	    ../views/index.html
+	  ">Views</a> 
+        </h2>
+        <ul>
+          <li> <a href="../views/article-template.html">Article Template</a>  </li>
+          <li> <a href="../views/home-page.html">Home Page</a>  </li>
+        </ul>
+        <h2 class="pp-nav__heading">
+          <a href="
+	    ../pattern-tests/index.html
+	  ">Pattern Tests</a> 
+        </h2>
+        <ul>
+          <li> <a href="../pattern-tests/gist-test.html">Embed Gist</a>  </li>
+        </ul>
+      </nav>
+
+      <!-- Show Code -->
+      <script>
+        $('a.js-show-code').on('click', function(e) {
+          $(this).hide();
+          $(this).siblings('.js-hide-code').css('display', 'inline-block');
+          $(this).parent().siblings('.snippets-table').show();
+          e.preventDefault();
+        })
+        $('a.js-hide-code').on('click', function(e) {
+          $(this).hide();
+          $(this).siblings('.js-show-code').css("display", "inline-block");
+          $(this).parent().siblings('.snippets-table').hide();
+          e.preventDefault();
+        });
+      </script>
+
+      <!-- Copy Code -->
+      <script>
+        $(document).ready(function() {
+          client = new ZeroClipboard($('.copy-source'), {
+            moviePath: '../assets/images/ZeroClipboard.swf'
+          })
+          client.on('dataRequested', function(client, args) {
+            var cell = $(this).parents("td.snippet");
+            var code = cell.children("pre").text();
+            client.setText(code);
+          });
+        });
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+      <script src="../assets/js/pp-navigation.js"></script>
+      <script src="../assets/js/zeroclipboard.min.js"></script>
+  </body>
+</html>
