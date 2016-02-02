@@ -44,6 +44,15 @@ module.exports = function(grunt) {
 				}]
 			}
 		},
+		
+		copy: {
+			patternlibrary: {
+				expand: true,
+				cwd: 'assets/sass/',
+				src: ['**/*.scss', '!style.scss'],
+				dest: 'pattern-library/patterns-dest/assets/sass/theme-sass/'
+			}
+	    },
 
 		/**
 		 * Convert a set of images into a spritesheet and corresponding CSS variables.
