@@ -1,0 +1,205 @@
+---
+title: Basic Hero
+---
+
+<div class="pattern-wrapper">
+
+	<h1 class="pattern-title">Basic Hero with Overlay</h1>
+	<p class="pattern-description">A basic hero image with an overlay for ease of reading with a title, some text, and a button.</p>
+
+	<!-- Begin Your Code -->
+
+	<section class="hero image-as-background" style="background-image: url('http://www.placecage.com/1600/450');">
+		<div class="hero-container">
+			<header>
+				<h1 class="hero-title">This is a large hero section</h1>
+			</header>
+			<div class="hero-content">
+				<p>This is the text that describes the hero section. There is a blue button below me!</p>
+				<p><a href="#" class="button"><span class="button-text">Read More</span></a></p>
+			</div><!-- .hero-content -->
+		</div><!-- .hero-container -->
+	</section><!-- .hero -->
+
+	<section class="hero image-as-background" style="background-image: url('http://www.placecage.com/1600/450');">
+		<div class="hero-container">
+			<header>
+				<h1 class="hero-title">This is a large hero section</h1>
+			</header>
+			<div class="hero-content">
+				<p>This is the text that describes the hero section. There is a transparent button below me!</p>
+				<p><a href="#" class="button"><span class="button-text">Read More</span></a></p>
+			</div><!-- .hero-content -->
+		</div><!-- .hero-container -->
+	</section><!-- .hero -->
+	
+</div><!-- .pattern-wrapper -->
+
+<div class="pattern-snippet">
+	<div class="pattern-control">
+	  <a href="#" class="js-show-code">Show Code</a>
+	  <a href="#" class="js-hide-code">Hide Code</a>
+	</div>
+	
+	<table class="snippets-table">
+		<tbody>
+			<tr>
+				<td class="snippet">
+					<div class="copy-source-container">
+						<a href="javascript:void(0)" class="copy-source">Copy HTML</a>
+					</div><!-- .copy-source-container -->
+					
+{{#markdown}}
+```html
+<div class="wrap">
+
+	<h1 class="pen-title">Basic Hero with Overlay</h1>
+	<p class="pen-description">A basic hero image with an overlay for ease of reading with a title, some text, and a button.</p>
+
+	<!-- Begin Your Code -->
+
+	<section class="hero image-as-background" style="background-image: url('http://www.placecage.com/1600/450');">
+		<div class="hero-container">
+			<header>
+				<h1 class="hero-title">This is a large hero section</h1>
+			</header>
+			<div class="hero-content">
+				<p>This is the text that describes the hero section. There is a blue button below me!</p>
+				<p><a href="#" class="button"><span class="button-text">Read More</span></a></p>
+			</div><!-- .hero-content -->
+		</div><!-- .hero-container -->
+	</section><!-- .hero -->
+
+	<section class="hero image-as-background" style="background-image: url('http://www.placecage.com/1600/450');">
+		<div class="hero-container">
+			<header>
+				<h1 class="hero-title">This is a large hero section</h1>
+			</header>
+			<div class="hero-content">
+				<p>This is the text that describes the hero section. There is a transparent button below me!</p>
+				<p><a href="#" class="button"><span class="button-text">Read More</span></a></p>
+			</div><!-- .hero-content -->
+		</div><!-- .hero-container -->
+	</section><!-- .hero -->
+
+</div><!-- .wrap -->
+```
+{{/markdown}}
+				</td>
+				
+				<td class="snippet">
+					<div class="copy-source-container">
+						<a href="javascript:void(0)" class="copy-source">Copy Scss</a>
+					</div>
+{{#markdown}}
+```scss
+.hero {
+	background-position: 50% 50%; /* This could be 50% 50%, 0 0, or really anything.  The world is your stinky little oyster! */
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: auto;
+	margin-bottom: rem(35);
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	
+	@include media($phone-landscape) {
+		background-position: 50% 0;
+		height: rem(300);
+	}
+	
+	@include media($desktop) {
+		height: rem(450);
+	}
+
+	/* Add a slight overlay on our image */
+	&:after {
+		background-color: rgba($color-indigo, .4);
+		bottom: 0;
+		content: '';
+		left: -2000%;
+		position: absolute;
+		right: -2000%;
+		top: 0;
+		z-index: 1;
+	}
+}
+
+// Style the container holding our hero contents
+.hero-container {
+	box-sizing: border-box;
+	height: auto;
+	padding: rem(70) rem(50);
+	position: relative;
+	text-align: center;
+	z-index: 2;
+	
+	@include media($phone-landscape) {
+		height: 100%;
+	}
+	
+	@include media($desktop) {
+		padding: rem(100) rem(50);
+	}
+
+	p {
+		color: $color-white;
+		font-family: $font-sans;
+		font-size: 16px;
+		letter-spacing: 1px;
+	}
+}
+
+.hero-title {
+	color: $color-white;
+	font-family: $font-sans;
+	font-size: 36px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+}
+
+// Toss some styles on that lil ole button
+.button {
+	background-color: $color-indigo;
+	border-radius: rem(6);
+	color: $color-white;
+	display: inline-block;
+	height: rem(44);
+	padding: 0 rem(44);
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.2s ease;
+	
+	&:hover {
+		background-color: darken($color-indigo, 5%);
+		text-decoration: none;
+	}
+}
+
+// Styles for a "ghost" button - a button with no background color, but with a thin border
+.ghost {
+	background-color: transparent;
+	border: 1px solid $color-white;
+
+	&:hover {
+		background-color: $color-white;
+		border-color: transparent;
+		color: $color-indigo;
+	}
+}
+
+// Vertically center the text within our button link
+.button-text {
+	@include vertical-align(middle);
+	
+	display: block;
+	font-weight: 600;
+}
+```
+{{/markdown}}
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div><!-- .pattern-snippet -->
