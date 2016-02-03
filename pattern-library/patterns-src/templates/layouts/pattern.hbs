@@ -1,0 +1,29 @@
+{{>header}}
+
+<body>
+	<div id="libraryContainer" class="pp-container">
+		
+		<header class="pp-header">
+			<a href="/"><img src="{{assets}}/images/logo.svg" class="pp-header__logo"></a>
+			<div id="menuToggle" class="pp-menu-toggle">
+				<div class="pp-menu-toggle__hamburger">Menu</div>
+			</div><!-- #menuToggle .pp-menu-toggle -->
+		</header><!-- .pp-header -->
+		
+		<div id="libraryContent" class="pp-content">
+			<div class="markdown__body">
+
+				{{> body }}
+
+			</div><!-- .markdown__body -->
+		</div><!-- #libraryContent .pp-content -->
+		
+		<div id="menuOverlay" class="pp-open-overlay"></div>
+		
+	</div><!-- #libraryContainer .pp-container -->
+	
+	{{> sidebar}}
+	
+	{{> footer}}
+</body>
+</html>
